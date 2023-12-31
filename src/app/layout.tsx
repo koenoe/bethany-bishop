@@ -1,5 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import { Katibeh, Playfair, Questrial, Alata } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 import './globals.css';
 
 // Note: for logo
@@ -54,6 +57,8 @@ export default function RootLayout({
         className={`${katibeh.variable} ${playfair.variable} ${questrial.variable} ${alata.variable} bg-white font-sans`}
       >
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

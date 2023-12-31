@@ -12,19 +12,19 @@
   }
 
   .text-h1 {
-    @apply text-5xl font-bold;
+    @apply text-5xl font-light;
   }
 
   .text-h2 {
-    @apply text-lg font-semibold;
+    @apply text-lg font-normal;
   }
 
   .text-h3 {
-    @apply font-semibold;
+    @apply font-normal;
   }
 
   .text-h4 {
-    @apply text-sm font-semibold;
+    @apply text-sm font-normal;
   }
 
   .text-h5 {
@@ -73,4 +73,9 @@
   h6 {
     @apply text-h6;
   }
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
 }
