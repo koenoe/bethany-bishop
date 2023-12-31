@@ -16,8 +16,7 @@
     "*.css": "postcss"
   },
   "tailwindCSS.experimental.classRegex": [
-    // This regex still a bit buggy, https://github.com/joe-bell/cva/discussions/85
-    // Due to tailwind intellisense having a search limit of 1000, large cva functions will not 100% work
-    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ]
 }
