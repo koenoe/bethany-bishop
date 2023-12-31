@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-questrial)', ...defaultTheme.fontFamily.sans],
+        sans: ['var(--font-opensans)', ...defaultTheme.fontFamily.sans],
         logo: 'var(--font-katibeh)',
       },
       colors: {

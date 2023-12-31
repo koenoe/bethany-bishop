@@ -4,7 +4,7 @@
 
 @layer utilities {
   .text-heading {
-    font-family: var(--font-playfair);
+    font-family: var(--font-moncheri);
   }
 
   .text-heading-alt {
