@@ -16,6 +16,8 @@ const katibeh = Katibeh({
 const playfair = Playfair({
   subsets: ['latin'],
   variable: '--font-playfair',
+  display: 'swap',
+  adjustFontFallback: false,
 });
 
 // Note: for more heading
