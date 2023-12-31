@@ -12,11 +12,11 @@
   }
 
   .text-h1 {
-    @apply text-5xl font-light;
+    @apply text-5xl;
   }
 
   .text-h2 {
-    @apply text-lg font-normal;
+    @apply text-3xl;
   }
 
   .text-h3 {
