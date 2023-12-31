@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Katibeh, Playfair, Questrial, Alata } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { cva } from 'class-variance-authority';
 
 import './globals.css';
 
@@ -47,6 +48,14 @@ export const viewport: Viewport = {
   maximumScale: 1,
 };
 
+const styles = cva([
+  katibeh.variable,
+  playfair.variable,
+  questrial.variable,
+  'bg-white',
+  'font-sans',
+]);
+
 export default function RootLayout({
   children,
 }: {
@@ -55,9 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <meta name="robots" content="noindex,nofollow" />
-      <body
-        className={`${katibeh.variable} ${playfair.variable} ${questrial.variable} ${alata.variable} bg-white font-sans`}
-      >
+      <body className={styles()}>
         {children}
         <Analytics />
         <SpeedInsights />
