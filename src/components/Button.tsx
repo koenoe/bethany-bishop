@@ -11,6 +11,7 @@ const button = cva(
       intent: {
         primary: ['bg-primary', 'hover:bg-primary/90', '!text-white'],
         secondary: ['bg-secondary', 'hover:bg-secondary/90', '!text-white'],
+        neutral: ['bg-gray-200', 'hover:bg-gray-100', '!text-gray-400'],
       },
     },
   },
