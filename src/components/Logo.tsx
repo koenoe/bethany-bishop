@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { cx } from 'class-variance-authority';
+import LogoImage from '@/assets/logo.svg';
 
 type Props = Readonly<{
   className?: string;
@@ -15,7 +16,7 @@ export default function Logo({ className }: Props) {
     >
       <Image
         className="bg-primary"
-        src="/logo.svg"
+        src={LogoImage}
         alt="Logo"
         width={48}
         height={48}
