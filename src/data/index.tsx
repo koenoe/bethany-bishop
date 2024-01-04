@@ -5,7 +5,7 @@ import BrandsImage from '@/assets/brands.png';
 
 export const HOME_PAGE = {
   hero: {
-    title: 'Boring prose have no place here.',
+    title: 'Boring prose has no place here.',
     subtitle: 'Copywriting and strategy for unabashed brands.',
     link: {
       label: 'Discover more',
