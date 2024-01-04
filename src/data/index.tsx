@@ -14,21 +14,21 @@ export const HOME_PAGE = {
   },
   services: {
     title: 'Your story sets you apart',
-    description: `Telling it with impact, clarity and emotion is essential to bringing any brand to life. That's where I can help.`,
+    description: `Telling it with impact, clarity and emotion is what makes a brand stand up and stand out. That’s where I can help.`,
     items: [
       {
         title: 'Copywriting',
-        description: 'Further eloborate on the copywriting service',
+        description: 'I can write your website, give your email campaigns a kick or create some stellar micro-copy for your apps and interfaces. I do a mean brochure, too. Whatever your written need, digital or print, I promise authentic writing that people want to read. That’s harder than it sounds.',
         icon: PencilIcon,
       },
       {
         title: 'Proofing and editing',
-        description: 'Further eloborate on the editing service',
+        description: 'Ok, you’ve got the copy, but it’s not really singing on the page. It’s barely humming. The words are there, but not quite there. Consider me a fresh set of eyes. I’ll help you level up your content so it’s polished, correct and harmonising like the Vienna Philharmonic. ',
         icon: GlassesIcon,
       },
       {
         title: 'Branding and tone',
-        description: 'Further eloborate on the branding service',
+        description: 'People don’t identify with companies. They identify with brands that speak to who they are, and listen too. Whether you want to finesse your unique tone of voice or set up the strategies that will breathe life and character into your offering, I’ve got you.  ',
         icon: MagicWandIcon,
       },
     ],
