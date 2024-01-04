@@ -9,9 +9,13 @@ export default function Services() {
         {HOME_PAGE.services.title}
       </h2>
       <p className="mb-12 md:text-lg">{HOME_PAGE.services.description}</p>
-      <div className="md:flex md:gap-x-32">
+      <div className="md:flex md:gap-x-20">
         {HOME_PAGE.services.items.map((service) => (
-          <Service key={service.title} className="mb-8 md:mb-0" {...service} />
+          <Service
+            key={service.title}
+            className="mb-8 w-full md:mb-0 md:w-1/3"
+            {...service}
+          />
         ))}
       </div>
     </Block>

@@ -12,11 +12,11 @@
   }
 
   .text-h1 {
-    @apply text-5xl;
+    @apply text-5xl md:text-7xl;
   }
 
   .text-h2 {
-    @apply text-3xl;
+    @apply text-3xl md:text-5xl;
   }
 
   .text-h3 {

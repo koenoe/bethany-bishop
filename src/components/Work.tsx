@@ -1,5 +1,6 @@
-import { HOME_PAGE } from '@/data';
+import { HOME_PAGE, PROJECTS } from '@/data';
 import Block from './Block';
+import WorkThumbnail from './WorkThumbnail';
 
 export default function Work() {
   return (
@@ -7,7 +8,15 @@ export default function Work() {
       <h2 className="mb-6 leading-normal md:mb-8 md:leading-normal">
         {HOME_PAGE.work.title}
       </h2>
-      <p className="md:text-lg">work here</p>
+      <div className="flex flex-col gap-12 md:flex-row">
+        {PROJECTS.map((project) => (
+          <WorkThumbnail
+            key={project.slug}
+            className="block w-full md:w-1/3"
+            {...project}
+          />
+        ))}
+      </div>
     </Block>
   );
 }
