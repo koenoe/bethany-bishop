@@ -6,6 +6,7 @@ import BrandsImage from '@/assets/brands.png';
 import LightyearThumbnail from '@/assets/projects/lightyear.jpg';
 import NtuThumbnail from '@/assets/projects/ntu.jpg';
 import RobinRadarThumbnail from '@/assets/projects/robin-radar.jpg';
+import Beth from '@/assets/beth.jpg';
 
 export const HOME_PAGE = {
   hero: {
@@ -56,13 +57,24 @@ export const HOME_PAGE = {
         I'm <span className="text-secondary">Beth</span>
       </>
     ),
-    description: `Fusce vitae facilisis ligula. Vestibulum est leo, commodo ac
-    fermentum vitae, porttitor faucibus magna. Curabitur at sapien
-    faucibus, placerat enim eu, hendrerit mi. Praesent sagittis est
-    nibh, et vulputate purus molestie ac. Phasellus tempor quam in nunc
-    vehicula gravida.`,
+    description: (
+      <>
+        <p>
+          This freelance copywriter is seriously capable, fiercely creative and
+          cat-obsessed.
+        </p>
+        <p>
+          If you're an innovative brand with bright ideas, you're in good
+          company! (Even if you're a dog person, they're cool too).
+        </p>
+        <p>
+          Over the years, I've had real adventures helping pioneering brands off
+          the ground and into the world.
+        </p>
+      </>
+    ),
     image: {
-      src: 'https://placekitten.com/g/600/800',
+      src: Beth,
       alt: 'Beth',
     },
     link: {

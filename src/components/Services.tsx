@@ -8,7 +8,9 @@ export default function Services() {
       <h2 className="mb-6 text-secondary md:mb-8">
         {HOME_PAGE.services.title}
       </h2>
-      <p className="mb-12 md:text-lg">{HOME_PAGE.services.description}</p>
+      <p className="mb-12 text-lg md:text-xl">
+        {HOME_PAGE.services.description}
+      </p>
       <div className="md:flex md:gap-x-20">
         {HOME_PAGE.services.items.map((service) => (
           <Service
