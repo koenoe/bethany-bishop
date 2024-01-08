@@ -25,6 +25,50 @@ export const HOME_PAGE = {
       },
     ],
   },
+  about: {
+    title: (
+      <>
+        <span className="inline-block">Hiya,</span>
+        <br />
+        <span className="inline-block">
+          I'm <strong>Beth</strong>
+        </span>
+      </>
+    ),
+    description: (
+      <>
+        <p>
+          To most, what I do looks a lot like tapping away at a desk. Possibly
+          with a cat on my lap, definitely with a cuppa close to hand.
+        </p>
+        <p>But let me tell you, it's much more than that.</p>
+        <p>
+          I'm capturing narrative and distilling it. Thoughts thunder down onto
+          the keys and gallop across the screen as I trial, tweak, revise and
+          revisit. I'm wrangling for the perfect words, corralling them into
+          world-class concepts.
+        </p>
+        <p>
+          And besides, it's a<span className="italic">standing</span> desk.
+        </p>
+        <p>
+          Over the years I've helped heaps of exciting projects off the ground
+          and into the big bright world. If you're an innovative brand with bold
+          ideas, it could be us rolling towards the horizon and into our next
+          adventure.
+        </p>
+        <p>What do you say, Partner. Want some words? </p>
+      </>
+    ),
+    image: {
+      src: Beth,
+      alt: 'Beth',
+    },
+    link: {
+      label: `Let's talk, for real!`,
+      href: '',
+    },
+  },
   services: {
     title: 'Your story sets you apart',
     description: `Telling it with impact, clarity and emotion is what makes a brand stand up and stand out. That's where I can help.`,
@@ -53,48 +97,6 @@ export const HOME_PAGE = {
         icon: MagicWandIcon,
       },
     ],
-  },
-  about: {
-    title: (
-      <>
-        <span className="inline-block">Hiya,</span>
-        <br />
-        <span className="inline-block">
-          I'm <strong>Beth</strong>
-        </span>
-      </>
-    ),
-    description: (
-      <>
-        <p>
-          To most, what I do looks a lot like tapping away at a desk. Possibly
-          with a cat on my lap, definitely with a cuppa close to hand.
-        </p>
-        <p>But let me tell you, it's much more than that.</p>
-        <p>
-          I'm capturing narrative and distilling it. Thoughts thunder down onto
-          the keys and gallop across the screen as I trial, tweak, revise and
-          revisit. I'm wrangling for the perfect words, corralling them into
-          world-class concepts. And besides, it's a{' '}
-          <span className="italic">standing</span> desk.
-        </p>
-        <p>
-          Over the years I've helped heaps of exciting projects off the ground
-          and into the big bright world. If you're an innovative brand with bold
-          ideas, it could be us rolling towards the horizon and into our next
-          adventure.
-        </p>
-        <p>What do you say, Partner. Want some words? </p>
-      </>
-    ),
-    image: {
-      src: Beth,
-      alt: 'Beth',
-    },
-    link: {
-      label: `Let's talk, for real!`,
-      href: '',
-    },
   },
   work: {
     title: 'A closer look at my work',
