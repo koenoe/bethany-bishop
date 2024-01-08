@@ -49,7 +49,7 @@ export const HOME_PAGE = {
           world-class concepts.
         </p>
         <p>
-          And besides, it's a<span className="italic">standing</span> desk.
+          And besides, it's a <span className="italic">standing</span> desk.
         </p>
         <p>
           Over the years I've helped heaps of exciting projects off the ground
