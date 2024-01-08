@@ -4,7 +4,7 @@
 
 @layer utilities {
   .text-heading {
-    font-family: var(--font-moncheri);
+    font-family: var(--font-pphatton);
   }
 
   .text-heading-alt {
@@ -12,7 +12,7 @@
   }
 
   .text-h1 {
-    @apply text-5xl md:text-7xl;
+    @apply text-5xl md:text-8xl;
   }
 
   .text-h2 {

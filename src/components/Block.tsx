@@ -1,7 +1,7 @@
 import { cva, type VariantProps } from 'class-variance-authority';
 import React from 'react';
 
-const block = cva(['w-full', 'md:p-16', 'p-10', 'text-black'], {
+const block = cva(['w-full', 'md:p-20', 'p-10', 'text-midnight'], {
   variants: {
     intent: {
       primary: ['bg-primary', '!text-white'],

@@ -1,13 +1,17 @@
 'use client';
 
 import { useState } from 'react';
+import { cva, cx } from 'class-variance-authority';
 import Button from './Button';
 
 const EMAIL_ADDRESS = 'hello@bethanybishop.co.uk';
 const COPY_LABEL = 'Copy';
 const COPIED_LABEL = 'Copied!';
 
-export default function CopyEmailButton() {
+export interface CopyEmailButtonProps
+  extends React.AllHTMLAttributes<HTMLDivElement> {}
+
+export default function CopyEmailButton({ className }: CopyEmailButtonProps) {
   const [buttonLabel, setButtonLabel] = useState(COPY_LABEL);
 
   const handleCopyEmail = async () => {
@@ -21,11 +25,20 @@ export default function CopyEmailButton() {
   };
 
   return (
-    <div className="flex content-center items-center gap-4">
-      <p className="text-heading-alt leading-none md:text-xl">
+    <div
+      className={cx(
+        'inline-flex basis-auto content-center items-center bg-black/10',
+        className,
+      )}
+    >
+      <p className="text-heading-alt px-4 text-center text-base leading-none md:px-10 md:text-2xl">
         {EMAIL_ADDRESS}
       </p>
-      <Button intent="neutral" onClick={handleCopyEmail}>
+      <Button
+        intent="primary"
+        onClick={handleCopyEmail}
+        className="min-w-24 text-nowrap px-4 text-base md:min-w-40 md:py-5"
+      >
         {buttonLabel}
       </Button>
     </div>

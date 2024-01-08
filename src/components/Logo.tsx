@@ -15,14 +15,16 @@ export default function Logo({ className }: Props) {
       )}
     >
       <Image
-        className="bg-primary"
+        className="bg-primary p-[4px]"
         src={LogoImage}
         alt="Logo"
-        width={48}
-        height={48}
+        width={40}
+        height={40}
         priority
       />
-      <span className="font-logo text-3xl leading-none">Bethany Bishop</span>
+      <span className="cursor-default font-logo text-3xl leading-none">
+        Bethany Bishop
+      </span>
     </div>
   );
 }

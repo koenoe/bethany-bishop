@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Open_Sans, Alata } from 'next/font/google';
+import { Alata } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { cva } from 'class-variance-authority';
@@ -7,11 +7,60 @@ import localFont from 'next/font/local';
 
 import './globals.css';
 
-// Note: for headings
-const tanMonCheri = localFont({
-  src: '../fonts/TAN-MONCHERI.woff2',
+// Note: for body text
+const optima = localFont({
+  src: [
+    {
+      path: '../fonts/Optima-Regular.woff2',
+      weight: 'normal',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/Optima-Bold.woff2',
+      weight: 'bold',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/Optima-Italic.woff2',
+      weight: 'normal',
+      style: 'italic',
+    },
+    {
+      path: '../fonts/Optima-BoldItalic.woff2',
+      weight: 'bold',
+      style: 'italic',
+    },
+    {
+      path: '../fonts/Optima-ExtraBlack.woff2',
+      weight: '900',
+      style: 'normal',
+    },
+  ],
   display: 'swap',
-  variable: '--font-moncheri',
+  variable: '--font-optima',
+});
+
+// Note: for headings
+const PPHatton = localFont({
+  src: [
+    {
+      path: '../fonts/PPHatton-Medium.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/PPHatton-Bold.woff2',
+      weight: 'bold',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/PPHatton-Ultralight.woff2',
+      weight: '200',
+      style: 'normal',
+    },
+  ],
+  display: 'swap',
+  variable: '--font-pphatton',
 });
 
 // Note: for logo
@@ -21,18 +70,11 @@ const katibeh = localFont({
   variable: '--font-katibeh',
 });
 
-// Note: for more heading
+// Note: for alternate heading
 const alata = Alata({
   subsets: ['latin'],
   weight: '400',
   variable: '--font-alata',
-  display: 'swap',
-});
-
-// Note: default sans font
-const openSans = Open_Sans({
-  subsets: ['latin'],
-  variable: '--font-opensans',
   display: 'swap',
 });
 
@@ -51,11 +93,13 @@ export const viewport: Viewport = {
 
 const styles = cva([
   katibeh.variable,
-  openSans.variable,
+  optima.variable,
   alata.variable,
-  tanMonCheri.variable,
-  'bg-white',
+  PPHatton.variable,
+  'bg-beige',
   'font-sans',
+  'text-midnight',
+  'antialiased',
 ]);
 
 export default function RootLayout({

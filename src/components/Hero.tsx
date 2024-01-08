@@ -6,14 +6,24 @@ import Logo from './Logo';
 export default function Hero() {
   return (
     <Block intent="secondary">
-      <Logo className="mb-8 md:mb-12" />
-      <h1 className="mb-8 leading-normal md:mb-12 md:max-w-4xl md:text-7xl md:leading-normal">
+      <Logo className="mb-10 md:mb-16" />
+      <h1 className="mb-8 cursor-default leading-tight md:max-w-4xl md:leading-tight">
         {HOME_PAGE.hero.title}
       </h1>
-      <h2 className="text-heading-alt mb-8 md:mb-12 md:text-4xl">
+      <h2 className="text-heading-alt mb-10 cursor-default text-2xl md:mb-16 md:text-4xl">
         {HOME_PAGE.hero.subtitle}
       </h2>
-      <Button intent="primary">{HOME_PAGE.hero.link.label}</Button>
+      <div className="flex flex-row gap-4">
+        {HOME_PAGE.hero.buttons.map((button) => (
+          <Button
+            key={button.label}
+            intent={button.intent}
+            className="basis-1/2 md:basis-auto"
+          >
+            {button.label}
+          </Button>
+        ))}
+      </div>
     </Block>
   );
 }

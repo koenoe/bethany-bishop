@@ -2,11 +2,7 @@ import type { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
 
 const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       fontFamily: {
@@ -14,8 +10,10 @@ const config: Config = {
         logo: 'var(--font-katibeh)',
       },
       colors: {
-        primary: '#fd883d',
+        primary: '#f76201',
         secondary: '#6a86d8',
+        beige: '#faefe0',
+        midnight: '#394979',
       },
     },
   },

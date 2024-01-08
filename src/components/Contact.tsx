@@ -4,12 +4,12 @@ import CopyEmailButton from './CopyEmailButton';
 
 export default function Contact() {
   return (
-    <Block>
-      <h2 className="mb-6 leading-normal text-secondary md:mb-8 md:leading-normal">
-        {HOME_PAGE.contact.title}
-      </h2>
-      <p className="mb-6 md:mb-8 md:text-lg">{HOME_PAGE.contact.description}</p>
-      <CopyEmailButton />
+    <Block className="mb-10 text-center">
+      <h2 className="mb-4">{HOME_PAGE.contact.title}</h2>
+      <p className="mx-auto mb-8 max-w-screen-lg text-xl leading-relaxed md:mb-12 md:text-2xl md:leading-relaxed">
+        {HOME_PAGE.contact.description}
+      </p>
+      <CopyEmailButton className="mx-auto" />
     </Block>
   );
 }

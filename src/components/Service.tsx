@@ -1,6 +1,7 @@
 import { HOME_PAGE } from '@/data';
 import { cx } from 'class-variance-authority';
 import Image from 'next/image';
+import Card from './Card';
 
 type Props = (typeof HOME_PAGE.services.items)[number] &
   React.AllHTMLAttributes<HTMLDivElement>;
@@ -12,24 +13,19 @@ export default function Service({
   description,
 }: Props) {
   return (
-    <div
-      className={cx(
-        'relative pl-16 pt-12 text-justify md:pl-20 md:pt-20',
-        className,
-      )}
-    >
+    <Card className={cx('relative p-8 text-justify md:p-10', className)}>
       <Image
         src={icon}
         alt=""
         className={cx(
-          'absolute left-0 top-0 w-16 md:w-28' +
-            (title === 'Copywriting' ? 'w-12 md:w-24' : ''),
+          'absolute left-[-2rem] top-[-2rem] w-24 md:left-[-2rem] md:top-[-3rem] md:w-36' +
+            (title === 'Copywriting' ? 'w-12 md:w-28' : ''),
         )}
       />
-      <h3 className="text-heading-alt mb-4 text-2xl text-secondary md:text-3xl">
+      <h3 className="text-heading-alt mb-6 text-center text-2xl md:text-3xl">
         {title}
       </h3>
-      <p className="leading-relaxed">{description}</p>
-    </div>
+      <p className="text-xl leading-relaxed">{description}</p>
+    </Card>
   );
 }

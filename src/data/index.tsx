@@ -12,10 +12,18 @@ export const HOME_PAGE = {
   hero: {
     title: 'Boring prose has no place here.',
     subtitle: 'Copywriting and strategy for unabashed brands.',
-    link: {
-      label: 'Discover more',
-      href: '',
-    },
+    buttons: [
+      {
+        label: 'See my work',
+        href: '',
+        intent: 'outline',
+      },
+      {
+        label: 'Say hello',
+        href: '',
+        intent: 'primary',
+      },
+    ],
   },
   services: {
     title: 'Your story sets you apart',
@@ -32,12 +40,9 @@ export const HOME_PAGE = {
           <>
             Ok, you've got the copy, but it's not really singing on the page.
             It's barely humming. The words are there, but not quite{' '}
-            <span className="italic" style={{ fontStyle: 'italic' }}>
-              there
-            </span>
-            . Consider me a fresh set of eyes. I'll help you level up your
-            content so it's polished, correct and harmonising like the Vienna
-            Philharmonic.
+            <span className="italic">there</span>. Consider me a fresh set of
+            eyes. I'll help you level up your content so it's polished, correct
+            and harmonising like the Vienna Philharmonic.
           </>
         ),
         icon: GlassesIcon,
@@ -52,25 +57,34 @@ export const HOME_PAGE = {
   about: {
     title: (
       <>
-        Hiya,
+        <span className="inline-block">Hiya,</span>
         <br />
-        I'm <span className="text-secondary">Beth</span>
+        <span className="inline-block">
+          I'm <strong>Beth</strong>
+        </span>
       </>
     ),
     description: (
       <>
         <p>
-          This freelance copywriter is seriously capable, fiercely creative and
-          cat-obsessed.
+          To most, what I do looks a lot like tapping away at a desk. Possibly
+          with a cat on my lap, definitely with a cuppa close to hand.
+        </p>
+        <p>But let me tell you, it's much more than that.</p>
+        <p>
+          I'm capturing narrative and distilling it. Thoughts thunder down onto
+          the keys and gallop across the screen as I trial, tweak, revise and
+          revisit. I'm wrangling for the perfect words, corralling them into
+          world-class concepts. And besides, it's a{' '}
+          <span className="italic">standing</span> desk.
         </p>
         <p>
-          If you're an innovative brand with bright ideas, you're in good
-          company! (Even if you're a dog person, they're cool too).
+          Over the years I've helped heaps of exciting projects off the ground
+          and into the big bright world. If you're an innovative brand with bold
+          ideas, it could be us rolling towards the horizon and into our next
+          adventure.
         </p>
-        <p>
-          Over the years, I've had real adventures helping pioneering brands off
-          the ground and into the world.
-        </p>
+        <p>What do you say, Partner. Want some words? </p>
       </>
     ),
     image: {
