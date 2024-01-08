@@ -15,6 +15,7 @@ export default function About() {
             className="w-full object-contain"
             src={HOME_PAGE.about.image.src}
             alt={HOME_PAGE.about.image.alt}
+            priority
           />
         </div>
         <Card className="md:px-28">
