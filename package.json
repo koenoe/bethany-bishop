@@ -2,6 +2,10 @@
   "name": "bethany-bishop",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=8"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
