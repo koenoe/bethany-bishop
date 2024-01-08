@@ -78,6 +78,19 @@ const alata = Alata({
   display: 'swap',
 });
 
+const styles = cva([
+  katibeh.variable,
+  optima.variable,
+  alata.variable,
+  PPHatton.variable,
+  'bg-beige',
+  'font-sans',
+  'text-midnight',
+  'antialiased',
+]);
+
+export const runtime = 'edge';
+
 export const metadata: Metadata = {
   title: {
     template: '%s - Bethany Bishop',
@@ -90,17 +103,6 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
 };
-
-const styles = cva([
-  katibeh.variable,
-  optima.variable,
-  alata.variable,
-  PPHatton.variable,
-  'bg-beige',
-  'font-sans',
-  'text-midnight',
-  'antialiased',
-]);
 
 export default function RootLayout({
   children,
