@@ -13,7 +13,7 @@ import Image from 'next/image';
 
 export const HOME_PAGE = {
   metadata: {
-    title: 'Bethany Bishop',
+    title: '',
     description: 'Copywriting and strategy for unabashed brands.',
   },
   hero: {
