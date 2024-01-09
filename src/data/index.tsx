@@ -123,6 +123,7 @@ export const PROJECTS = [
         src: LightyearThumbnail,
         alt: 'Lightyear Cars',
       },
+      label: 'Read more',
     },
   },
   {
@@ -134,6 +135,7 @@ export const PROJECTS = [
         src: NtuThumbnail,
         alt: 'Notts Trent University',
       },
+      label: 'Read more',
     },
   },
   {
@@ -145,6 +147,7 @@ export const PROJECTS = [
         src: RobinRadarThumbnail,
         alt: 'Robin Radar',
       },
+      label: 'Read more',
     },
   },
 ] as const;
