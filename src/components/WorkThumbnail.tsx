@@ -28,7 +28,7 @@ export default function WorkThumbnail({ className, thumbnail, slug }: Props) {
         <h3 className="text-heading-alt mb-6 text-2xl md:mb-10 md:text-5xl">
           {thumbnail.title}
         </h3>
-        <Button intent="primary" className="gap-2 py-2 text-sm">
+        <Button intent="primary" className="gap-2 py-2">
           <Image
             src={CircleArrowIcon}
             alt=""

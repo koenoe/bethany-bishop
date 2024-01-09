@@ -33,7 +33,7 @@ export default function CopyEmailButton({ className }: CopyEmailButtonProps) {
         className,
       )}
     >
-      <p className="text-heading-alt px-4 text-center text-base leading-none md:px-10 md:text-2xl">
+      <p className="text-heading-alt px-4 text-center text-sm leading-none md:px-10 md:text-2xl">
         {EMAIL_ADDRESS}
       </p>
       <Button

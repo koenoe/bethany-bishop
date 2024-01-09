@@ -13,7 +13,7 @@ const button = cva(
     'font-bold',
     'text-midnight',
     'md:text-2xl',
-    'text-xl',
+    'text-base',
     'flex',
     'items-center',
     'content-center',

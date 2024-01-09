@@ -11,8 +11,8 @@ import { HOME_PAGE } from '@/data';
 export default function About() {
   return (
     <Block>
-      <div className="flex flex-col md:flex-row">
-        <div className="relative mb-6 ml-auto w-full max-w-[375px] md:mb-0 md:mr-[-2%] md:mt-24">
+      <div className="flex flex-col lg:flex-row">
+        <div className="relative mb-6 ml-auto w-full lg:mb-0 lg:mr-[-2%] lg:mt-24 lg:max-w-[375px]">
           <Image
             className="w-full object-contain"
             src={HOME_PAGE.about.image.src}
