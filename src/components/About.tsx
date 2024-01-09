@@ -27,7 +27,7 @@ export default function About() {
           <div className="mb-6 text-justify text-xl md:mb-8 md:text-2xl md:leading-relaxed [&>p]:mb-4">
             {HOME_PAGE.about.description}
           </div>
-          <Button intent="primary">
+          <Button intent="primary" className="w-full md:w-auto">
             <Image src={EmailIcon} alt="" />
             {HOME_PAGE.about.button.label}
           </Button>
