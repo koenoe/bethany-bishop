@@ -29,7 +29,7 @@ export default function CopyEmailButton({ className }: CopyEmailButtonProps) {
   return (
     <div
       className={cx(
-        'inline-flex basis-auto content-center items-center bg-black/10',
+        'inline-flex max-w-full basis-auto content-center items-center bg-black/10',
         className,
       )}
     >
@@ -39,7 +39,7 @@ export default function CopyEmailButton({ className }: CopyEmailButtonProps) {
       <Button
         intent="primary"
         onClick={handleCopyEmail}
-        className="min-w-24 !gap-2 text-nowrap px-4 !text-base md:min-w-40 md:!gap-4 md:py-5 md:!text-2xl"
+        className="min-w-[110px] !gap-2 text-nowrap px-4 !text-sm md:min-w-48 md:!gap-4 md:py-5 md:!text-2xl"
       >
         <Image src={CopyIcon} alt="" />
         {buttonLabel}
