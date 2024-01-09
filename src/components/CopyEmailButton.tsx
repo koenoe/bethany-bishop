@@ -39,7 +39,7 @@ export default function CopyEmailButton({ className }: CopyEmailButtonProps) {
       <Button
         intent="primary"
         onClick={handleCopyEmail}
-        className="min-w-24 text-nowrap px-4 text-base md:min-w-40 md:py-5"
+        className="min-w-24 !gap-2 text-nowrap px-4 !text-base md:min-w-40 md:!gap-4 md:py-5 md:!text-2xl"
       >
         <Image src={CopyIcon} alt="" />
         {buttonLabel}

@@ -15,11 +15,7 @@ export default function Hero() {
       </h2>
       <div className="flex flex-row gap-4">
         {HOME_PAGE.hero.buttons.map((button) => (
-          <Button
-            key={button.label}
-            intent={button.intent}
-            className="basis-1/2 md:basis-auto"
-          >
+          <Button key={button.label} intent={button.intent}>
             {button.icon}
             {button.label}
           </Button>
