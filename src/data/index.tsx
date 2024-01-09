@@ -22,13 +22,13 @@ export const HOME_PAGE = {
     buttons: [
       {
         label: 'See my work',
-        href: '',
+        href: '#work',
         intent: 'outline',
         icon: <Image src={CircleArrowIcon} alt="" />,
       },
       {
         label: 'Say hello',
-        href: '',
+        href: '#contact',
         intent: 'primary',
         icon: <Image src={EmailIcon} alt="" />,
       },
@@ -75,7 +75,7 @@ export const HOME_PAGE = {
     },
     button: {
       label: `Let's talk, for real!`,
-      href: '',
+      href: '#contact',
     },
   },
   services: {

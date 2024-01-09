@@ -110,7 +110,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       {/* FIXME: remove this when the site is ready */}
       <meta name="robots" content="noindex,nofollow" />
       <body className={styles()}>

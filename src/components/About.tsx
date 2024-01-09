@@ -1,12 +1,12 @@
 import Image from 'next/image';
 
 import Block from './Block';
-import Button from './Button';
 import Card from './Card';
 
 import EmailIcon from '@/assets/email.svg';
 
 import { HOME_PAGE } from '@/data';
+import ButtonLink from './ButtonLink';
 
 export default function About() {
   return (
@@ -27,10 +27,14 @@ export default function About() {
           <div className="mb-6 text-justify text-xl md:mb-8 md:text-2xl md:leading-relaxed [&>p]:mb-4">
             {HOME_PAGE.about.description}
           </div>
-          <Button intent="primary" className="w-full md:w-auto">
+          <ButtonLink
+            intent="primary"
+            className="w-full md:w-auto"
+            href={HOME_PAGE.about.button.href}
+          >
             <Image src={EmailIcon} alt="" />
             {HOME_PAGE.about.button.label}
-          </Button>
+          </ButtonLink>
         </Card>
       </div>
     </Block>

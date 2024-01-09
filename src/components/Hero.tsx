@@ -1,7 +1,7 @@
 import { HOME_PAGE } from '@/data';
 import Block from './Block';
-import Button from './Button';
 import Logo from './Logo';
+import ButtonLink from './ButtonLink';
 
 export default function Hero() {
   return (
@@ -15,14 +15,15 @@ export default function Hero() {
       </h2>
       <div className="flex flex-row gap-4">
         {HOME_PAGE.hero.buttons.map((button) => (
-          <Button
+          <ButtonLink
             key={button.label}
             intent={button.intent}
             className="grow text-nowrap md:grow-0"
+            href={button.href}
           >
             {button.icon}
             {button.label}
-          </Button>
+          </ButtonLink>
         ))}
       </div>
     </Block>

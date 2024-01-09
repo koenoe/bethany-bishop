@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { cx } from 'class-variance-authority';
 import LogoImage from '@/assets/logo.svg';
+import Link from 'next/link';
 
 type Props = Readonly<{
   className?: string;
@@ -8,7 +9,8 @@ type Props = Readonly<{
 
 export default function Logo({ className }: Props) {
   return (
-    <div
+    <Link
+      href="/"
       className={cx(
         'flex h-[48px] content-center items-center gap-4',
         className,
@@ -22,9 +24,7 @@ export default function Logo({ className }: Props) {
         height={40}
         priority
       />
-      <span className="cursor-default font-logo text-3xl leading-none">
-        Bethany Bishop
-      </span>
-    </div>
+      <span className="font-logo text-3xl leading-none">Bethany Bishop</span>
+    </Link>
   );
 }

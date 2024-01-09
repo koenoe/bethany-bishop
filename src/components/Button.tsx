@@ -4,7 +4,7 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof button> {}
 
-const button = cva(
+export const button = cva(
   [
     'px-4',
     'py-3',
@@ -14,7 +14,7 @@ const button = cva(
     'text-midnight',
     'md:text-2xl',
     'text-base',
-    'flex',
+    'inline-flex',
     'items-center',
     'content-center',
     'justify-center',
@@ -33,6 +33,7 @@ const button = cva(
           'border-2',
           'border-white',
           'hover:border-white/75',
+          'box-content',
         ],
         primary: ['bg-primary', 'hover:bg-primary/90', '!text-white'],
         secondary: ['bg-secondary', 'hover:bg-secondary/90', '!text-white'],
