@@ -7,6 +7,9 @@ import LightyearThumbnail from '@/assets/projects/lightyear.jpg';
 import NtuThumbnail from '@/assets/projects/ntu.jpg';
 import RobinRadarThumbnail from '@/assets/projects/robin-radar.jpg';
 import Beth from '@/assets/beth.jpg';
+import CircleArrowIcon from '@/assets/circle-arrow.svg';
+import EmailIcon from '@/assets/email.svg';
+import Image from 'next/image';
 
 export const HOME_PAGE = {
   hero: {
@@ -17,11 +20,13 @@ export const HOME_PAGE = {
         label: 'See my work',
         href: '',
         intent: 'outline',
+        icon: <Image src={CircleArrowIcon} alt="" />,
       },
       {
         label: 'Say hello',
         href: '',
         intent: 'primary',
+        icon: <Image src={EmailIcon} alt="" />,
       },
     ],
   },
@@ -64,7 +69,7 @@ export const HOME_PAGE = {
       src: Beth,
       alt: 'Beth',
     },
-    link: {
+    button: {
       label: `Let's talk, for real!`,
       href: '',
     },

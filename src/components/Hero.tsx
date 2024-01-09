@@ -20,6 +20,7 @@ export default function Hero() {
             intent={button.intent}
             className="basis-1/2 md:basis-auto"
           >
+            {button.icon}
             {button.label}
           </Button>
         ))}

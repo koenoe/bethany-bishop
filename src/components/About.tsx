@@ -4,6 +4,8 @@ import Block from './Block';
 import Button from './Button';
 import Card from './Card';
 
+import EmailIcon from '@/assets/email.svg';
+
 import { HOME_PAGE } from '@/data';
 
 export default function About() {
@@ -25,7 +27,10 @@ export default function About() {
           <div className="mb-6 text-justify text-xl md:mb-8 md:text-2xl md:leading-relaxed [&>p]:mb-4">
             {HOME_PAGE.about.description}
           </div>
-          <Button intent="primary">{HOME_PAGE.about.link.label}</Button>
+          <Button intent="primary">
+            <Image src={EmailIcon} alt="" />
+            {HOME_PAGE.about.button.label}
+          </Button>
         </Card>
       </div>
     </Block>

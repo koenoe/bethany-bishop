@@ -13,7 +13,7 @@ export default function Service({
   description,
 }: Props) {
   return (
-    <Card className={cx('relative p-8 text-justify md:p-10', className)}>
+    <Card className={cx('relative p-8 text-justify lg:p-10', className)}>
       <Image
         src={icon}
         alt=""

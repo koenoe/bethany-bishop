@@ -1,8 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import { cva, cx } from 'class-variance-authority';
+import { cx } from 'class-variance-authority';
 import Button from './Button';
+import CopyIcon from '@/assets/copy.svg';
+import Image from 'next/image';
 
 const EMAIL_ADDRESS = 'hello@bethanybishop.co.uk';
 const COPY_LABEL = 'Copy';
@@ -39,6 +41,7 @@ export default function CopyEmailButton({ className }: CopyEmailButtonProps) {
         onClick={handleCopyEmail}
         className="min-w-24 text-nowrap px-4 text-base md:min-w-40 md:py-5"
       >
+        <Image src={CopyIcon} alt="" />
         {buttonLabel}
       </Button>
     </div>
