@@ -12,6 +12,10 @@ import EmailIcon from '@/assets/email.svg';
 import Image from 'next/image';
 
 export const HOME_PAGE = {
+  metadata: {
+    title: 'Bethany Bishop',
+    description: 'Copywriting and strategy for unabashed brands.',
+  },
   hero: {
     title: 'Boring prose has no place here.',
     subtitle: 'Copywriting and strategy for unabashed brands.',
