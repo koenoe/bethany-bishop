@@ -19,6 +19,7 @@ export default function WorkThumbnail({ className, thumbnail, slug }: Props) {
         src={thumbnail.image.src}
         alt={thumbnail.image.alt}
         className="absolute inset-0 h-full w-full object-cover object-top"
+        placeholder="blur"
       />
       <div className="absolute inset-0 bg-black opacity-35" />
       <div className="absolute bottom-8 left-8 text-white md:bottom-20 md:left-20">
