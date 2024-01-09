@@ -111,6 +111,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      {/* FIXME: remove this when the site is ready */}
       <meta name="robots" content="noindex,nofollow" />
       <body className={styles()}>
         {children}
