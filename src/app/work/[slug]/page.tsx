@@ -6,6 +6,7 @@ import { PROJECTS } from '@/data';
 import Logo from '@/components/Logo';
 import PageContainer from '@/components/PageContainer';
 import Intro from '@/components/Intro';
+import Contact from '@/components/Contact';
 
 type Params = Readonly<{
   slug: string;
@@ -73,6 +74,7 @@ export default function WorkPage({ params }: { params: Params }) {
           title={project.intro.title}
           description={project.intro.description}
         />
+        <Contact />
       </PageContainer>
     </>
   );

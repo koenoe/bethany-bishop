@@ -14,7 +14,7 @@ export default function Brands() {
             <Image
               src={brand.logo}
               alt={brand.name}
-              className="h-full w-full object-contain"
+              className="aspect-square h-full w-full object-contain "
             />
           </div>
         ))}
