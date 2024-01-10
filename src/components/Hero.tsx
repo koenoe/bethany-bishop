@@ -5,7 +5,7 @@ import ButtonLink from './ButtonLink';
 
 export default function Hero() {
   return (
-    <Block intent="secondary">
+    <Block className="bg-secondary py-10 !text-white md:py-20">
       <Logo className="mb-10 md:mb-16" />
       <h1 className="mb-8 cursor-default leading-tight md:max-w-4xl md:leading-tight">
         {HOME_PAGE.hero.title}

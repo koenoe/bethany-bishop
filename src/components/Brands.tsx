@@ -4,12 +4,21 @@ import Image from 'next/image';
 
 export default function Brands() {
   return (
-    <Block className="!pb-0">
-      <Image
-        src={HOME_PAGE.brands.image.src}
-        alt={HOME_PAGE.brands.image.alt}
-        className="w-full"
-      />
+    <Block>
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4 lg:mx-48">
+        {HOME_PAGE.brands.map((brand) => (
+          <div
+            key={brand.name}
+            className="relative flex aspect-square items-center justify-center bg-white p-6 lg:p-10"
+          >
+            <Image
+              src={brand.logo}
+              alt={brand.name}
+              className="h-full w-full object-contain"
+            />
+          </div>
+        ))}
+      </div>
     </Block>
   );
 }

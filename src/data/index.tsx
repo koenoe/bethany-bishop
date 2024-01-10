@@ -1,15 +1,27 @@
+import Image from 'next/image';
+
 import PencilIcon from '@/assets/pencil.svg';
 import GlassesIcon from '@/assets/glasses.svg';
 import MagicWandIcon from '@/assets/magic-wand.svg';
-import BrandsImage from '@/assets/brands.png';
-
-import LightyearThumbnail from '@/assets/projects/lightyear.jpg';
-import NtuThumbnail from '@/assets/projects/ntu.jpg';
-import RobinRadarThumbnail from '@/assets/projects/robin-radar.jpg';
 import Beth from '@/assets/beth.jpg';
 import CircleArrowIcon from '@/assets/circle-arrow.svg';
 import EmailIcon from '@/assets/email.svg';
-import Image from 'next/image';
+
+import LightyearThumbnail from '@/assets/projects/lightyear/thumbnail.jpg';
+import LightyearIntro from '@/assets/projects/lightyear/intro.jpg';
+import NtuThumbnail from '@/assets/projects/ntu/thumbnail.jpg';
+import NtuIntro from '@/assets/projects/ntu/intro.jpg';
+import RobinRadarThumbnail from '@/assets/projects/robin-radar/thumbnail.jpg';
+import RobinRadarIntro from '@/assets/projects/robin-radar/intro.jpg';
+
+import BritishIceSkatingLogo from '@/assets/logos/british-ice-skating.gif';
+import BritishTaekwondoLogo from '@/assets/logos/british-taekwondo.svg';
+import BuzzFeedLogo from '@/assets/logos/buzzfeed.svg';
+import GoodHousekeepingLogo from '@/assets/logos/good-housekeeping.svg';
+import LightyearLogo from '@/assets/logos/lightyear.svg';
+import NtuLogo from '@/assets/logos/ntu.svg';
+import RobinRadarLogo from '@/assets/logos/robin-radar.svg';
+import TheUpcomingLogo from '@/assets/logos/the-upcoming.svg';
 
 export const HOME_PAGE = {
   metadata: {
@@ -110,12 +122,40 @@ export const HOME_PAGE = {
   work: {
     title: 'A closer look at my work',
   },
-  brands: {
-    image: {
-      src: BrandsImage,
-      alt: 'Brands I have worked with',
+  brands: [
+    {
+      name: 'Good Housekeeping',
+      logo: GoodHousekeepingLogo,
     },
-  },
+    {
+      name: 'BuzzFeed',
+      logo: BuzzFeedLogo,
+    },
+    {
+      name: 'Nottingham Trent University',
+      logo: NtuLogo,
+    },
+    {
+      name: 'Lightyear',
+      logo: LightyearLogo,
+    },
+    {
+      name: 'Robin Radar',
+      logo: RobinRadarLogo,
+    },
+    {
+      name: 'British Taekwondo',
+      logo: BritishTaekwondoLogo,
+    },
+    {
+      name: 'British Ice Skating',
+      logo: BritishIceSkatingLogo,
+    },
+    {
+      name: 'The Upcoming',
+      logo: TheUpcomingLogo,
+    },
+  ],
   contact: {
     title: 'Drop me a line any time.',
     description: `Whether you have a question, a project idea, or just want to say hello, I'd love to hear from you. Reach out and let's start a conversation.`,
@@ -134,6 +174,32 @@ export const PROJECTS = [
       },
       label: 'Read more',
     },
+    intro: {
+      title: 'Range scripted by sunlight',
+      description: (
+        <>
+          <p>
+            Lightyear is a revolutionary electric car brand reinventing the
+            wheel. Almost literally.
+          </p>
+          <p>
+            Every aspect of their carefully innovated solar electric cars,
+            Lightyear 0 and Lightyear 2, were designed to minimise consumption
+            and maximise energy wheels. Hyper-efficient electric cars that could
+            boost their own range with sunlight. Cool, right?
+          </p>
+          <p>
+            As Senior Copywriter, it was my job to educate and engage with
+            inspiring messaging and impactful copy. From the campaigns that
+            launched Lightyear 2 to the brand's luminescent tone of voice.
+          </p>
+        </>
+      ),
+      image: {
+        src: LightyearIntro,
+        alt: 'Lightyear Cars',
+      },
+    },
   },
   {
     slug: 'ntu',
@@ -146,17 +212,69 @@ export const PROJECTS = [
       },
       label: 'Read more',
     },
+    intro: {
+      title: 'Range scripted by sunlight',
+      description: (
+        <>
+          <p>
+            Lightyear is a revolutionary electric car brand reinventing the
+            wheel. Almost literally.
+          </p>
+          <p>
+            Every aspect of their carefully innovated solar electric cars,
+            Lightyear 0 and Lightyear 2, were designed to minimise consumption
+            and maximise energy wheels. Hyper-efficient electric cars that could
+            boost their own range with sunlight. Cool, right?
+          </p>
+          <p>
+            As Senior Copywriter, it was my job to educate and engage with
+            inspiring messaging and impactful copy. From the campaigns that
+            launched Lightyear 2 to the brand's luminescent tone of voice.
+          </p>
+        </>
+      ),
+      image: {
+        src: NtuIntro,
+        alt: 'Notts Trent University',
+      },
+    },
   },
   {
     slug: 'robin-radar',
     thumbnail: {
       title: 'Robin Radar',
-      subtitle: 'Writing revolutionary B2B tech',
+      subtitle: 'Writing transcendent B2B tech',
       image: {
         src: RobinRadarThumbnail,
         alt: 'Robin Radar',
       },
       label: 'Read more',
+    },
+    intro: {
+      title: 'Range scripted by sunlight',
+      description: (
+        <>
+          <p>
+            Lightyear is a revolutionary electric car brand reinventing the
+            wheel. Almost literally.
+          </p>
+          <p>
+            Every aspect of their carefully innovated solar electric cars,
+            Lightyear 0 and Lightyear 2, were designed to minimise consumption
+            and maximise energy wheels. Hyper-efficient electric cars that could
+            boost their own range with sunlight. Cool, right?
+          </p>
+          <p>
+            As Senior Copywriter, it was my job to educate and engage with
+            inspiring messaging and impactful copy. From the campaigns that
+            launched Lightyear 2 to the brand's luminescent tone of voice.
+          </p>
+        </>
+      ),
+      image: {
+        src: RobinRadarIntro,
+        alt: 'Robin Radar',
+      },
     },
   },
 ] as const;

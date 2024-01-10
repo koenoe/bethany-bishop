@@ -3,7 +3,7 @@ import { cx } from 'class-variance-authority';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Button from './Button';
+import Button from '../Button';
 import CircleArrowIcon from '@/assets/circle-arrow.svg';
 
 type Props = (typeof PROJECTS)[number] &
@@ -12,7 +12,7 @@ type Props = (typeof PROJECTS)[number] &
 export default function WorkThumbnail({ className, thumbnail, slug }: Props) {
   return (
     <Link
-      className={cx('relative block h-[350px] w-full md:h-[750px]', className)}
+      className={cx('relative block h-[450px] w-full md:h-[750px]', className)}
       href={`/work/${slug}`}
     >
       <Image
