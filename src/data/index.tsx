@@ -30,7 +30,7 @@ export const HOME_PAGE = {
   },
   hero: {
     title: 'Boring prose has no place here.',
-    subtitle: 'Copywriting and strategy for unabashed brands.',
+    subtitle: 'Copywriting and strategy for fearless brands.',
     buttons: [
       {
         label: 'See my work',
@@ -75,7 +75,7 @@ export const HOME_PAGE = {
         <p>
           Over the years I've helped heaps of exciting projects off the ground
           and into the big bright world. If you're an innovative brand with bold
-          ideas, it could be us rolling towards the horizon and into our next
+          ideas, it could be us rolling towards the horizon together. Into our next
           adventure.
         </p>
         <p>What do you say, Partner. Want some words? </p>
