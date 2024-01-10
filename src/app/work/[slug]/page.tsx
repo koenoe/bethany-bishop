@@ -52,10 +52,10 @@ export default function WorkPage({ params }: { params: Params }) {
         <div className="relative mx-auto h-full w-full max-w-screen-2xl">
           <Logo className="mb-10 md:mb-16" />
           <div className="absolute bottom-0 left-0">
-            <p className="leading-normal md:text-2xl md:leading-relaxed">
+            <p className="text-xl leading-normal md:text-2xl md:leading-relaxed">
               {project.thumbnail.subtitle}
             </p>
-            <h3 className="text-heading-alt text-2xl md:text-5xl">
+            <h3 className="text-heading-alt text-3xl md:text-5xl">
               {project.thumbnail.title}
             </h3>
           </div>

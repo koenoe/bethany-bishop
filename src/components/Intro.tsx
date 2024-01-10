@@ -38,7 +38,7 @@ export default function Intro({
           ) : (
             title
           )}
-          <div className="mb-6 text-justify text-xl md:mb-8 md:text-2xl md:leading-relaxed [&>p]:mb-4">
+          <div className="mb-6 text-xl leading-relaxed md:mb-8 md:text-2xl md:leading-relaxed [&>p]:mb-4">
             {description}
           </div>
           {button &&
