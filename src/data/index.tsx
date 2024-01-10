@@ -182,10 +182,10 @@ export const PROJECTS = [
             Humans are instinctive travellers. We've wandered nomadically for centuries, pressed to conquer the horizon. 
           </p>
           <p>
-            Mobility began as an instinct, but today it's essential, and our need to move has taken us a step too far. The energy crisis is enduring. Climate change is advancing. 
+            Mobility began as an instinct but today it's essential, and our need to move has taken us a step too far. The energy crisis is enduring. Climate change is advancing. 
           </p>
           <p>
-          The time has come to engineer a new reality. Like our ancestors, we'll break ground to discover pioneering possibility. We'll follow our instincts, letting curiosity forge paths to a more balanced world. 
+          The time has come to engineer a new reality. Like our ancestors, we'll break ground to discover new ways. Better ways. Letting curiosity lead, we'll forge paths to a more balanced world. 
          </p>
           <p>
           There will be no looking back at the way things should have been, only ahead to what could be: clean movement, accessible to all. 
