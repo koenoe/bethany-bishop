@@ -213,23 +213,17 @@ export const PROJECTS = [
       label: 'Read more',
     },
     intro: {
-      title: 'Range scripted by sunlight',
+      title: 'Love sport? Join the club!',
       description: (
         <>
           <p>
-            Lightyear is a revolutionary electric car brand reinventing the
-            wheel. Almost literally.
+           Did you know that taking part in fitness and sport could boost your academic studies? Really! Regular exercise can help reduce stress, increase your energy levels and – for those lectures – boost concentration.
           </p>
           <p>
-            Every aspect of their carefully innovated solar electric cars,
-            Lightyear 0 and Lightyear 2, were designed to minimise consumption
-            and maximise energy wheels. Hyper-efficient electric cars that could
-            boost their own range with sunlight. Cool, right?
+            So, whether you're wanting to hone your skills in a familiar field or jump feet-first into a whole new ball game, we've got you. With over 60 sports clubs to try, heaps of fun commitment-free sessions and outstanding fitness facilities, you can participate at your own pace. 
           </p>
           <p>
-            As Senior Copywriter, it was my job to educate and engage with
-            inspiring messaging and impactful copy. From the campaigns that
-            launched Lightyear 2 to the brand's luminescent tone of voice.
+            Come along to the Freshers Fair NTU Sport stand to find out more about the clubs, classes and sessions we know you'll love.
           </p>
         </>
       ),
