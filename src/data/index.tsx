@@ -167,7 +167,7 @@ export const PROJECTS = [
     slug: 'lightyear',
     thumbnail: {
       title: 'Lightyear Cars',
-      subtitle: 'Scripting sustainable futures',
+      subtitle: 'Solar electric mobility',
       image: {
         src: LightyearThumbnail,
         alt: 'Lightyear Cars',
@@ -179,19 +179,19 @@ export const PROJECTS = [
       description: (
         <>
           <p>
-            Lightyear is a revolutionary electric car brand reinventing the
-            wheel. Almost literally.
+            Humans are instinctive travellers. We've wandered nomadically for centuries, pressed to conquer the horizon. 
           </p>
           <p>
-            Every aspect of their carefully innovated solar electric cars,
-            Lightyear 0 and Lightyear 2, were designed to minimise consumption
-            and maximise energy wheels. Hyper-efficient electric cars that could
-            boost their own range with sunlight. Cool, right?
+            Mobility began as an instinct, but today it's essential, and our need to move has taken us a step too far. The energy crisis is enduring. Climate change is advancing. 
           </p>
           <p>
-            As Senior Copywriter, it was my job to educate and engage with
-            inspiring messaging and impactful copy. From the campaigns that
-            launched Lightyear 2 to the brand's luminescent tone of voice.
+          The time has come to engineer a new reality. Like our ancestors, we'll break ground to discover pioneering possibility. We'll follow our instincts, letting curiosity forge paths to a more balanced world. 
+         </p>
+          <p>
+          There will be no looking back at the way things should have been, only ahead to what could be: clean movement, accessible to all. 
+            </p>
+          <p>
+            Solar electric cars that flip the script for a cleaner future. 
           </p>
         </>
       ),
