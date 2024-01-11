@@ -53,7 +53,7 @@ export default function WorkPage({ params }: { params: Params }) {
         <div className="absolute inset-0 bg-black opacity-35" />
         <div className="relative mx-auto h-full w-full max-w-screen-2xl">
           <Logo className="mb-10 md:mb-16" />
-          <div className="absolute bottom-0 left-0">
+          <div className="absolute bottom-0 left-0 cursor-default">
             <p className="text-xl leading-normal md:text-2xl md:leading-relaxed">
               {project.thumbnail.subtitle}
             </p>
