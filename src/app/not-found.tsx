@@ -1,9 +1,8 @@
 import Image from 'next/image';
 
-import ButtonLink from '@/components/ButtonLink';
-
 import NotFoundGif from '@/assets/not-found.gif';
 import HomeIcon from '@/assets/home.svg';
+import { button } from '@/components/Button';
 
 export default function NotFoundPage() {
   return (
@@ -15,10 +14,11 @@ export default function NotFoundPage() {
       <p className="text-xl leading-relaxed md:text-2xl md:leading-relaxed">
         Come on, let's get you back home.
       </p>
-      <ButtonLink href="/" intent="primary">
+      {/* Note: Next's <Link /> doesn't seem to work here */}
+      <a href="/" className={button({ intent: 'primary' })}>
         <Image src={HomeIcon} alt="" />
         This way
-      </ButtonLink>
+      </a>
     </div>
   );
 }
