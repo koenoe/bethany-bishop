@@ -261,7 +261,7 @@ export const PROJECTS = [
             Every day, airports and airfields are confronted with the disasterous risk of bird strikes. Then there’s drones, an entirely unpredictable threat plaguing defence and security teams everywhere. 
  </p>
           <p>
-            Our radars are made for these very challenges. Unlike human observers, radars don’t need rest and see in all weather, day and night. They provide detailed insight in real-time and distinguish birds from drones with innovative micro-doppler technology.  
+            Our radars are made for these very challenges. Unlike human observers, radars don’t need rest and see in all weather, day and night. They provide detailed insight in real-time and distinguish birds from drones.  
  </p>
           <p>
             They're built for accuracy, durability and ease of use. You don't have to be a rocket scientist to operate our systems, you don't even need to be a radar scientist! 
