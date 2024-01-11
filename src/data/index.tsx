@@ -237,7 +237,7 @@ export const PROJECTS = [
     slug: 'robin-radar',
     thumbnail: {
       title: 'Robin Radar',
-      subtitle: 'Writing transcendent B2B tech',
+      subtitle: 'Writing B2B radar technologies',
       image: {
         src: RobinRadarThumbnail,
         alt: 'Robin Radar',
@@ -245,23 +245,29 @@ export const PROJECTS = [
       label: 'Read more',
     },
     intro: {
-      title: 'Range scripted by sunlight',
+      title: 'Radar love',
       description: (
         <>
           <p>
-            Lightyear is a revolutionary electric car brand reinventing the
-            wheel. Almost literally.
+            We are Robin Radar Systems. Technology leader in tracking and classification of small objects in airspace. 
           </p>
           <p>
-            Every aspect of their carefully innovated solar electric cars,
-            Lightyear 0 and Lightyear 2, were designed to minimise consumption
-            and maximise energy wheels. Hyper-efficient electric cars that could
-            boost their own range with sunlight. Cool, right?
+       Our technology is installed all over the globe, but it all started in The Netherlands. In cooperation with the Royal Netherlands Air Force, and later, the European Space Agency (ESA), TNO began developing unique algorithms to use radar. The technology had huge potential, and Robin Radar Systems was spun out of TNO in 2010. The rest, as they say, is history.
           </p>
           <p>
-            As Senior Copywriter, it was my job to educate and engage with
-            inspiring messaging and impactful copy. From the campaigns that
-            launched Lightyear 2 to the brand's luminescent tone of voice.
+          A lot has changed since, and today’s market demands even more.
+             </p>
+          <p>
+            Every day, airports and airfields are confronted with the difficult task of mitigating the risk of bird strikes. Then there’s drones, the entirely unpredictable threat plaguing defence and security teams and critical infrastructure. 
+ </p>
+          <p>
+            Our radars have been developed for these very challenges. Unlike human observers, radars don’t need rest and can see in all weather, day and night. They provide detailed insight in real-time and distinguish birds from drones with innovative micro-doppler technology.  
+ </p>
+          <p>
+            They're built for accuracy, durability and ease of use. You don't have to be a rocket scientist to operate our systems, you don't even need to be a radar scientist! 
+ </p>
+          <p>
+            But don't just take our word for it. Reach out for a demonstration today. 
           </p>
         </>
       ),
