@@ -75,8 +75,8 @@ export const HOME_PAGE = {
         <p>
           Over the years I've helped heaps of exciting projects off the ground
           and into the big bright world. If you're an innovative brand with bold
-          ideas, it could be us rolling towards the horizon together. Into our next
-          adventure.
+          ideas, it could be us rolling towards the horizon together. Into our
+          next adventure.
         </p>
         <p>What do you say, Partner. Want some words? </p>
       </>
@@ -179,20 +179,24 @@ export const PROJECTS = [
       description: (
         <>
           <p>
-            Humans are instinctive travellers. We've wandered nomadically for centuries, pressed to conquer the horizon. 
+            Humans are instinctive travellers. We've wandered nomadically for
+            centuries, pressed to conquer the horizon.
           </p>
           <p>
-            Mobility began as an instinct but today it's essential, and our need to move has taken us a step too far. The energy crisis is enduring. Climate change is advancing. 
+            Mobility began as an instinct but today it's essential, and our need
+            to move has taken us a step too far. The energy crisis is enduring.
+            Climate change is advancing.
           </p>
           <p>
-          The time has come to engineer a new reality. Like our ancestors, we'll break ground to discover new ways. Better ways. Letting curiosity lead, we'll forge paths to a more balanced world. 
-         </p>
-          <p>
-          There will be no looking back at the way things should have been, only ahead to what could be: clean movement, accessible to all. 
-            </p>
-          <p>
-            Solar electric cars that flip the script for a cleaner future. 
+            The time has come to engineer a new reality. Like our ancestors,
+            we'll break ground to discover new ways. Better ways. Letting
+            curiosity lead, we'll forge paths to a more balanced world.
           </p>
+          <p>
+            There will be no looking back at the way things should have been,
+            only ahead to what could be: clean movement, accessible to all.
+          </p>
+          <p>Solar electric cars that flip the script for a cleaner future.</p>
         </>
       ),
       image: {
@@ -217,13 +221,21 @@ export const PROJECTS = [
       description: (
         <>
           <p>
-           Did you know that taking part in fitness and sport could boost your academic studies? Really! Regular exercise can help reduce stress, increase your energy levels and – for those lectures – boost concentration.
+            Did you know that taking part in fitness and sport could boost your
+            academic studies? Really! Regular exercise can help reduce stress,
+            increase your energy levels and – for those lectures – boost
+            concentration.
           </p>
           <p>
-            So, whether you're wanting to hone your skills in a familiar field or jump feet-first into a whole new ball game, we've got you. With over 60 sports clubs to try, heaps of fun commitment-free sessions and outstanding fitness facilities, you can participate at your own pace. 
+            So, whether you're wanting to hone your skills in a familiar field
+            or jump feet-first into a whole new ball game, we've got you. With
+            over 60 sports clubs to try, heaps of fun commitment-free sessions
+            and outstanding fitness facilities, you can participate at your own
+            pace.
           </p>
           <p>
-            Come along to the Freshers Fair NTU Sport stand to find out more about the clubs, classes and sessions we know you'll love.
+            Come along to the Freshers Fair NTU Sport stand to find out more
+            about the clubs, classes and sessions we know you'll love.
           </p>
         </>
       ),
@@ -249,25 +261,36 @@ export const PROJECTS = [
       description: (
         <>
           <p>
-            We are Robin Radar Systems. Technology leader in tracking and classification of small objects in airspace. 
+            We are Robin Radar Systems. Technology leader in tracking and
+            classification of small objects in airspace.
           </p>
           <p>
-       Our technology spans worldwide, but it began in The Netherlands. With the Royal Netherlands Air Force and the European Space Agency (ESA), TNO developed unique algorithms to use radar. The technology had huge potential, and Robin Radar Systems was spun out in 2010. 
+            Our technology spans worldwide, but it began in The Netherlands.
+            With the Royal Netherlands Air Force and the European Space Agency
+            (ESA), TNO developed unique algorithms to use radar. The technology
+            had huge potential, and Robin Radar Systems was spun out in 2010.
           </p>
           <p>
-          The rest, as they say, is history. A lot has changed since, and today’s market demands even more.
-             </p>
+            The rest, as they say, is history. A lot has changed since, and
+            today’s market demands even more.
+          </p>
           <p>
-            Every day, airports and airfields are confronted with the disasterous risk of bird strikes. Then there’s drones, an entirely unpredictable threat plaguing defence and security teams everywhere. 
- </p>
+            Every day, airports and airfields are confronted with the
+            disasterous risk of bird strikes. Then there’s drones, an entirely
+            unpredictable threat plaguing defence and security teams everywhere.
+          </p>
           <p>
-            Our radars are made for every mission. Unlike human observers, they don’t need rest and see in all weather, day and night. They provide detailed insight in real-time and distinguish birds from drones.  
- </p>
+            Our radars are made for every mission. Unlike human observers, they
+            don’t need rest and see in all weather, day and night. They provide
+            detailed insight in real-time and distinguish birds from drones.
+          </p>
           <p>
-            They're built for accuracy, durability and ease of use. You don't have to be a rocket scientist to operate our systems, or even need a radar scientist! 
- </p>
+            They're built for accuracy, durability and ease of use. You don't
+            have to be a rocket scientist to operate our systems, or even need a
+            radar scientist!
+          </p>
           <p>
-            But don't take our word for it. Reach out for a demonstration today. 
+            But don't take our word for it. Reach out for a demonstration today.
           </p>
         </>
       ),
