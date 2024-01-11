@@ -49,6 +49,7 @@ export default function WorkPage({ params }: { params: Params }) {
           alt={project.thumbnail.image.alt}
           className="absolute inset-0 h-full w-full scale-105 object-cover blur"
           placeholder="blur"
+          priority
         />
         <div className="absolute inset-0 bg-black opacity-35" />
         <div className="relative mx-auto h-full w-full max-w-screen-2xl">
