@@ -252,19 +252,19 @@ export const PROJECTS = [
             We are Robin Radar Systems. Technology leader in tracking and classification of small objects in airspace. 
           </p>
           <p>
-       Our tech is installed worldwide, but it all started in The Netherlands. In cooperation with the Royal Netherlands Air Force and the European Space Agency (ESA), TNO began developing unique algorithms to use radar. The technology had huge potential, and Robin Radar Systems was spun out in 2010. The rest is history.
+       Our tech is installed worldwide, but it all started in The Netherlands. In cooperation with the Royal Netherlands Air Force and the European Space Agency (ESA), TNO began developing unique algorithms to use radar. The technology had huge potential, and Robin Radar Systems was spun out in 2010. 
           </p>
           <p>
-          A lot has changed since, and today’s market demands even more.
+          The rest, as they say, is history. A lot has changed since, and today’s market demands even more.
              </p>
           <p>
             Every day, airports and airfields are confronted with the disasterous risk of bird strikes. Then there’s drones, an entirely unpredictable threat plaguing defence and security teams everywhere. 
  </p>
           <p>
-            Our radars are made for these very challenges. Unlike human observers, radars don’t need rest and see in all weather, day and night. They provide detailed insight in real-time and distinguish birds from drones.  
+            Our radars are made for every mission. Unlike human observers, they don’t need rest and see in all weather, day and night. They provide detailed insight in real-time and distinguish birds from drones.  
  </p>
           <p>
-            They're built for accuracy, durability and ease of use. You don't have to be a rocket scientist to operate our systems, you don't even need to be a radar scientist! 
+            They're built for accuracy, durability and ease of use. You don't have to be a rocket scientist to operate our systems, or even need a radar scientist! 
  </p>
           <p>
             But don't take our word for it. Reach out for a demonstration today. 
