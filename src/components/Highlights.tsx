@@ -22,9 +22,11 @@ export default function Highlights({ project }: Props) {
               {highlight.description}
             </p>
             <ButtonLink
+              className="w-full md:w-auto"
               intent="primary"
               href={highlight.button.href}
               target="_blank"
+              rel="noopener noreferrer"
             >
               {highlight.button.icon}
               {highlight.button.label}

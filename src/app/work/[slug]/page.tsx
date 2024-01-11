@@ -80,6 +80,7 @@ export default function WorkPage({ params }: { params: Params }) {
               intent="primary"
               href={project.intro.button.href}
               target="_blank"
+              rel="noopener noreferrer"
             >
               {project.intro.button.icon}
               {project.intro.button.label}
