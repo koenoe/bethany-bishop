@@ -237,7 +237,7 @@ export const PROJECTS = [
     slug: 'robin-radar',
     thumbnail: {
       title: 'Robin Radar',
-      subtitle: 'Writing B2B radar technologies',
+      subtitle: 'Writing leading B2B technology',
       image: {
         src: RobinRadarThumbnail,
         alt: 'Robin Radar',
