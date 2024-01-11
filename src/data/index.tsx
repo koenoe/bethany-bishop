@@ -252,7 +252,7 @@ export const PROJECTS = [
             We are Robin Radar Systems. Technology leader in tracking and classification of small objects in airspace. 
           </p>
           <p>
-       Our tech is installed worldwide, but it all started in The Netherlands. In cooperation with the Royal Netherlands Air Force, and later, the European Space Agency (ESA), TNO began developing unique algorithms to use radar. The technology had huge potential, and Robin Radar Systems was spun out in 2010. The rest, as they say, is history.
+       Our tech is installed worldwide, but it all started in The Netherlands. In cooperation with the Royal Netherlands Air Force and the European Space Agency (ESA), TNO began developing unique algorithms to use radar. The technology had huge potential, and Robin Radar Systems was spun out in 2010. The rest is history.
           </p>
           <p>
           A lot has changed since, and today’s market demands even more.
