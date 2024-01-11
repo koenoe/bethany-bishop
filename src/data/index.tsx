@@ -32,8 +32,8 @@ import RobinRadarIntro from '@/assets/projects/robin-radar/intro.jpg';
 
 export const HOME_PAGE = {
   metadata: {
-    title: '',
-    description: 'Copywriting and strategy for unabashed brands.',
+    title: 'Bethany Bishop',
+    description: 'Copywriting and strategy for fearless brands..',
   },
   hero: {
     title: 'Boring prose has no place here.',
