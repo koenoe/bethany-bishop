@@ -252,22 +252,22 @@ export const PROJECTS = [
             We are Robin Radar Systems. Technology leader in tracking and classification of small objects in airspace. 
           </p>
           <p>
-       Our technology is installed all over the globe, but it all started in The Netherlands. In cooperation with the Royal Netherlands Air Force, and later, the European Space Agency (ESA), TNO began developing unique algorithms to use radar. The technology had huge potential, and Robin Radar Systems was spun out of TNO in 2010. The rest, as they say, is history.
+       Our tech is installed worldwide, but it all started in The Netherlands. In cooperation with the Royal Netherlands Air Force, and later, the European Space Agency (ESA), TNO began developing unique algorithms to use radar. The technology had huge potential, and Robin Radar Systems was spun out in 2010. The rest, as they say, is history.
           </p>
           <p>
           A lot has changed since, and today’s market demands even more.
              </p>
           <p>
-            Every day, airports and airfields are confronted with the difficult task of mitigating the risk of bird strikes. Then there’s drones, the entirely unpredictable threat plaguing defence and security teams and critical infrastructure. 
+            Every day, airports and airfields are confronted with the disasterous risk of bird strikes. Then there’s drones, an entirely unpredictable threat plaguing defence and security teams everywhere. 
  </p>
           <p>
-            Our radars have been developed for these very challenges. Unlike human observers, radars don’t need rest and can see in all weather, day and night. They provide detailed insight in real-time and distinguish birds from drones with innovative micro-doppler technology.  
+            Our radars are made for these very challenges. Unlike human observers, radars don’t need rest and see in all weather, day and night. They provide detailed insight in real-time and distinguish birds from drones with innovative micro-doppler technology.  
  </p>
           <p>
             They're built for accuracy, durability and ease of use. You don't have to be a rocket scientist to operate our systems, you don't even need to be a radar scientist! 
  </p>
           <p>
-            But don't just take our word for it. Reach out for a demonstration today. 
+            But don't take our word for it. Reach out for a demonstration today. 
           </p>
         </>
       ),
