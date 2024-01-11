@@ -1,7 +1,7 @@
 import { cva, type VariantProps } from 'class-variance-authority';
 import React from 'react';
 
-const card = cva(['bg-white', 'md:p-16', 'p-8', 'text-midnight']);
+const card = cva(['bg-white', 'md:p-14', 'p-8', 'text-midnight']);
 
 export interface CardProps
   extends React.AllHTMLAttributes<HTMLDivElement>,

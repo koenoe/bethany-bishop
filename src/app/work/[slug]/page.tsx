@@ -7,6 +7,8 @@ import Logo from '@/components/Logo';
 import PageContainer from '@/components/PageContainer';
 import Intro from '@/components/Intro';
 import Contact from '@/components/Contact';
+import Highlights from '@/components/Highlights';
+import ButtonLink from '@/components/ButtonLink';
 
 type Params = Readonly<{
   slug: string;
@@ -73,7 +75,18 @@ export default function WorkPage({ params }: { params: Params }) {
           }
           title={project.intro.title}
           description={project.intro.description}
+          button={
+            <ButtonLink
+              intent="primary"
+              href={project.intro.button.href}
+              target="_blank"
+            >
+              {project.intro.button.icon}
+              {project.intro.button.label}
+            </ButtonLink>
+          }
         />
+        <Highlights project={project} />
         <Contact />
       </PageContainer>
     </>

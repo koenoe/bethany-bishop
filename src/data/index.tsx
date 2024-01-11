@@ -1,19 +1,17 @@
 import Image from 'next/image';
 
+// Note: all icons
 import PencilIcon from '@/assets/pencil.svg';
 import GlassesIcon from '@/assets/glasses.svg';
 import MagicWandIcon from '@/assets/magic-wand.svg';
 import Beth from '@/assets/beth.jpg';
 import CircleArrowIcon from '@/assets/circle-arrow.svg';
 import EmailIcon from '@/assets/email.svg';
+import PlayIcon from '@/assets/play.svg';
+import DocumentIcon from '@/assets/document.svg';
+import ExternalLinkIcon from '@/assets/external-link.svg';
 
-import LightyearThumbnail from '@/assets/projects/lightyear/thumbnail.jpg';
-import LightyearIntro from '@/assets/projects/lightyear/intro.jpg';
-import NtuThumbnail from '@/assets/projects/ntu/thumbnail.jpg';
-import NtuIntro from '@/assets/projects/ntu/intro.jpg';
-import RobinRadarThumbnail from '@/assets/projects/robin-radar/thumbnail.jpg';
-import RobinRadarIntro from '@/assets/projects/robin-radar/intro.jpg';
-
+// Note: all logos
 import BritishIceSkatingLogo from '@/assets/logos/british-ice-skating.gif';
 import BritishTaekwondoLogo from '@/assets/logos/british-taekwondo.svg';
 import BuzzFeedLogo from '@/assets/logos/buzzfeed.svg';
@@ -22,6 +20,15 @@ import LightyearLogo from '@/assets/logos/lightyear.svg';
 import NtuLogo from '@/assets/logos/ntu.svg';
 import RobinRadarLogo from '@/assets/logos/robin-radar.svg';
 import TheUpcomingLogo from '@/assets/logos/the-upcoming.svg';
+
+import LightyearThumbnail from '@/assets/projects/lightyear/thumbnail.jpg';
+import LightyearIntro from '@/assets/projects/lightyear/intro.jpg';
+
+import NtuThumbnail from '@/assets/projects/ntu/thumbnail.jpg';
+import NtuIntro from '@/assets/projects/ntu/intro.jpg';
+
+import RobinRadarThumbnail from '@/assets/projects/robin-radar/thumbnail.jpg';
+import RobinRadarIntro from '@/assets/projects/robin-radar/intro.jpg';
 
 export const HOME_PAGE = {
   metadata: {
@@ -203,7 +210,50 @@ export const PROJECTS = [
         src: LightyearIntro,
         alt: 'Lightyear Cars',
       },
+      button: {
+        label: 'Join the countdown',
+        href: '/lightyear/countdown.mp4',
+        icon: <Image src={PlayIcon} alt="" />,
+      },
     },
+    highlights: [
+      {
+        title: 'An electric shift - Solar electric vehicles explained',
+        description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
+        button: {
+          label: 'Read blog',
+          href: 'https://lightyear.one/articles/a-powerful-shift-why-it-ll-take-more-than-conventional-electric-vehicles-to-scale-clean-mobility',
+          icon: <Image src={ExternalLinkIcon} alt="" />,
+        },
+      },
+      {
+        title: 'Product launch - solar electric specs',
+        description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
+        button: {
+          label: 'Read blog',
+          href: 'https://lightyear.one/articles/a-deep-dive-into-lightyear-0-how-far-can-clean-solar-kilometres-take-us',
+          icon: <Image src={ExternalLinkIcon} alt="" />,
+        },
+      },
+      {
+        title: 'Unmatched economy - Efficient design explained',
+        description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
+        button: {
+          label: 'Watch video',
+          href: '/lightyear/efficient-design-explained.mp4',
+          icon: <Image src={PlayIcon} alt="" />,
+        },
+      },
+      {
+        title: 'Scripting sustainable mobility - Lightyear 0 production video',
+        description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
+        button: {
+          label: 'Watch video',
+          href: '/lightyear/production.mp4',
+          icon: <Image src={PlayIcon} alt="" />,
+        },
+      },
+    ],
   },
   {
     slug: 'ntu',
@@ -243,7 +293,51 @@ export const PROJECTS = [
         src: NtuIntro,
         alt: 'Notts Trent University',
       },
+      button: {
+        label: 'Browse the brochure',
+        href: '/ntu/brochure.pdf',
+        icon: <Image src={DocumentIcon} alt="" />,
+      },
     },
+    highlights: [
+      {
+        title: `Student Claire hopes charity challenge will help change the world for disabled skiers and snowboarders`,
+        description: `NTU student Claire Ryan is pushing 200km to raise money and awareness for Snow Buddies UK, a charity that supports skiers and snowboarders with disabilities.`,
+        button: {
+          label: 'Read blog',
+          href: 'https://www.ntu.ac.uk/about-us/news/news-articles/2019/08/student-claire-hopes-charity-challenge-will-help-change-the-world-for-disabled-skiers-and-snowboarders',
+          icon: <Image src={ExternalLinkIcon} alt="" />,
+        },
+      },
+      {
+        title: 'This Girl Can Week returns to NTU',
+        description: `Trent This Girl Can Week is back, and we can't wait for female students to enjoy all that we have in store!`,
+        button: {
+          label: 'Read blog',
+          href: 'https://www.ntu.ac.uk/about-us/news/news-articles/2018/10/this-girl-can-week-returns-to-ntu',
+          icon: <Image src={ExternalLinkIcon} alt="" />,
+        },
+      },
+      {
+        title:
+          'NTU Welcome world tennis stars to campus for Nature Valley Open',
+        description: `World tennis stars flock to NTU's Centre after unprecedented summer rainfall puts Nature Valley Open grass pitches out of play this June.`,
+        button: {
+          label: 'Read blog',
+          href: 'https://www.ntu.ac.uk/about-us/news/news-articles/2019/06/ntu-welcome-world-tennis-stars-to-campus-for-nature-valley-open',
+          icon: <Image src={ExternalLinkIcon} alt="" />,
+        },
+      },
+      {
+        title: 'Varsity full-time roundup',
+        description: `With the Varsity 2018 now concluded, we look back on NTU's sporting performances across a very exciting series.`,
+        button: {
+          label: 'Read blog',
+          href: 'https://www.ntu.ac.uk/about-us/news/news-articles/2018/05/varsity-full-time-roundup',
+          icon: <Image src={ExternalLinkIcon} alt="" />,
+        },
+      },
+    ],
   },
   {
     slug: 'robin-radar',
@@ -272,16 +366,16 @@ export const PROJECTS = [
           </p>
           <p>
             The rest, as they say, is history. A lot has changed since, and
-            today’s market demands even more.
+            today's market demands even more.
           </p>
           <p>
             Every day, airports and airfields are confronted with the
-            disasterous risk of bird strikes. Then there’s drones, an entirely
+            disasterous risk of bird strikes. Then there's drones, an entirely
             unpredictable threat plaguing defence and security teams everywhere.
           </p>
           <p>
             Our radars are made for every mission. Unlike human observers, they
-            don’t need rest and see in all weather, day and night. They provide
+            don't need rest and see in all weather, day and night. They provide
             detailed insight in real-time and distinguish birds from drones.
           </p>
           <p>
@@ -298,6 +392,49 @@ export const PROJECTS = [
         src: RobinRadarIntro,
         alt: 'Robin Radar',
       },
+      button: {
+        label: 'Browse the brochure',
+        href: '',
+        icon: <Image src={DocumentIcon} alt="" />,
+      },
     },
+    highlights: [
+      {
+        title: 'An electric shift - Solar electric vehicles explained',
+        description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
+        button: {
+          label: 'Read more',
+          href: '',
+          icon: <Image src={ExternalLinkIcon} alt="" />,
+        },
+      },
+      {
+        title: 'Unmatched economy - Efficient design explained',
+        description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
+        button: {
+          label: 'Read more',
+          href: '',
+          icon: <Image src={ExternalLinkIcon} alt="" />,
+        },
+      },
+      {
+        title: 'Scripting sustainable mobility - Lightyear 0 production video',
+        description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
+        button: {
+          label: 'Read more',
+          href: '',
+          icon: <Image src={ExternalLinkIcon} alt="" />,
+        },
+      },
+      {
+        title: 'Product launch - solar electric specs',
+        description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
+        button: {
+          label: 'Read more',
+          href: '',
+          icon: <Image src={ExternalLinkIcon} alt="" />,
+        },
+      },
+    ],
   },
 ] as const;
