@@ -20,7 +20,8 @@
     "next": "14.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwind-scrollbar-hide": "^1.1.7"
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "use-debounce": "^10.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",

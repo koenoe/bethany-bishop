@@ -254,6 +254,20 @@ export const PROJECTS = [
         },
       },
     ],
+    recordings: {
+      desktop: {
+        width: 1920,
+        height: 1080,
+        totalNumberOfFrames: 665,
+        framePrefix: '/lightyear/frames/desktop/frame_',
+      },
+      mobile: {
+        width: 390,
+        height: 830,
+        totalNumberOfFrames: 709,
+        framePrefix: '/lightyear/frames/mobile/frame_',
+      },
+    },
   },
   {
     slug: 'ntu',
@@ -338,6 +352,7 @@ export const PROJECTS = [
         },
       },
     ],
+    recordings: null,
   },
   {
     slug: 'robin-radar',
@@ -436,5 +451,6 @@ export const PROJECTS = [
         },
       },
     ],
+    recordings: null,
   },
 ] as const;

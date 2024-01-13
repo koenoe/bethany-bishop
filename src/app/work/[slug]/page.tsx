@@ -9,6 +9,7 @@ import Intro from '@/components/Intro';
 import Contact from '@/components/Contact';
 import Highlights from '@/components/Highlights';
 import ButtonLink from '@/components/ButtonLink';
+import ScreenRecording from '@/components/ScreenRecording';
 
 type Params = Readonly<{
   slug: string;
@@ -88,6 +89,7 @@ export default function WorkPage({ params }: { params: Params }) {
             </ButtonLink>
           }
         />
+        <ScreenRecording project={project} />
         <Highlights project={project} />
         <Contact />
       </PageContainer>
