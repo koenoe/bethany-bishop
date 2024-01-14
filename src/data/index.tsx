@@ -264,7 +264,7 @@ export const PROJECTS = [
       mobile: {
         width: 390,
         height: 830,
-        totalNumberOfFrames: 575,
+        totalNumberOfFrames: 272,
         framePrefix: '/lightyear/frames/mobile/frame_',
       },
       button: {
