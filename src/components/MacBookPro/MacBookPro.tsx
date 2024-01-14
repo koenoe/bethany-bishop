@@ -1,17 +1,18 @@
 import { cx } from 'class-variance-authority';
+import { forwardRef } from 'react';
 
 // Note: credits to https://codepen.io/devindavid/pen/poeaxEb
 import './MacBookPro.css';
 
-export default function MacBookPro({
-  children,
-  className,
-}: Readonly<{
-  children: React.ReactNode;
-  className?: string;
-}>) {
+export default forwardRef<
+  HTMLDivElement,
+  Readonly<{
+    children: React.ReactNode;
+    className?: string;
+  }>
+>(function MacBookPro({ children, className }, ref) {
   return (
-    <div className={cx('mbp-mockup-wrapper', className)}>
+    <div className={cx('mbp-mockup-wrapper', className)} ref={ref}>
       <div className="mbp-container">
         <div className="mbp-display with-glare">
           <div className="display-edge">
@@ -37,4 +38,4 @@ export default function MacBookPro({
       </div>
     </div>
   );
-}
+});

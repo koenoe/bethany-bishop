@@ -1,20 +1,17 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useCallback, useState } from 'react';
-import {
-  useInView,
-  useMotionValue,
-  useMotionValueEvent,
-  useSpring,
-} from 'framer-motion';
+import { useMotionValue, useMotionValueEvent, useSpring } from 'framer-motion';
 import { useThrottledCallback } from 'use-debounce';
 import preloadImage from '@/utils/preloadImage';
+import useInView from '@/hooks/useInView';
 
 export type Props = Readonly<{
   height: number;
   framePrefix: string;
   width: number;
-  inViewRef?: React.RefObject<HTMLDivElement>;
+  inViewRef: React.RefObject<HTMLDivElement>;
+  inViewTreshold?: number;
   totalNumberOfFrames: number;
 }>;
 
@@ -37,20 +34,27 @@ const loadFrames = async (framePrefix: string, totalNumberOfFrames: number) => {
   return frames as HTMLImageElement[];
 };
 
+const enableBodyScroll = () => {
+  document.body.style.overflow = 'auto';
+};
+
+const disableBodyScroll = () => {
+  document.body.style.overflow = 'hidden';
+};
+
 export default function ScreenRecordingBase({
   width,
   framePrefix,
   height,
   inViewRef,
+  inViewTreshold = 1,
   totalNumberOfFrames,
 }: Props) {
   const [images, setImages] = useState<HTMLImageElement[]>([]);
   const lastLoadedFramePrefix = useRef<string | null>(null);
-  const ref = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const currentFrameRef = useRef(0);
   const lastTouchYRef = useRef(0);
-  const isInView = useInView(inViewRef ?? ref, { amount: 'all' });
   const frameProgress = useMotionValue(0);
   const progress = useSpring(frameProgress, {
     damping: 50,
@@ -68,7 +72,7 @@ export default function ScreenRecordingBase({
 
       drawImage(
         images[Math.min(Math.round(images.length * p), images.length - 1)],
-        canvasRef.current!.getContext('2d') as CanvasRenderingContext2D,
+        canvasRef.current.getContext('2d') as CanvasRenderingContext2D,
       );
     },
     [images],
@@ -92,8 +96,7 @@ export default function ScreenRecordingBase({
       (direction === 1 && currentFrameRef.current === lastFrame) ||
       (direction === -1 && currentFrameRef.current === 0)
     ) {
-      document.body.style.overflow = '';
-      return;
+      return enableBodyScroll();
     }
 
     if (event.cancelable) {
@@ -117,10 +120,11 @@ export default function ScreenRecordingBase({
       return;
     }
 
+    const sensitivityFactor = 5;
     const currentTouchY = event.touches[0].clientY;
     const lastTouchY = lastTouchYRef.current;
     const direction = currentTouchY < lastTouchY ? 1 : -1;
-    const intensity = Math.abs(currentTouchY - lastTouchY);
+    const intensity = Math.abs(currentTouchY - lastTouchY) / sensitivityFactor;
     const lastFrame = totalNumberOfFrames - 1;
     const nextFrame = Math.min(
       Math.max(0, currentFrameRef.current + direction * intensity),
@@ -131,8 +135,7 @@ export default function ScreenRecordingBase({
       (direction === 1 && currentFrameRef.current === lastFrame) ||
       (direction === -1 && currentFrameRef.current === 0)
     ) {
-      document.body.style.overflow = '';
-      return;
+      return enableBodyScroll();
     }
 
     if (event.cancelable) {
@@ -145,6 +148,13 @@ export default function ScreenRecordingBase({
   }, THROTTLE_DURATION);
 
   const addEventListeners = useCallback(() => {
+    inViewRef.current?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+    });
+
+    disableBodyScroll();
+
     window.addEventListener('wheel', handleWheel, { passive: false });
     if ('ontouchstart' in window) {
       window.addEventListener('touchstart', handleTouchStart, {
@@ -152,30 +162,37 @@ export default function ScreenRecordingBase({
       });
       window.addEventListener('touchmove', handleTouchMove, { passive: false });
     }
-    document.body.style.overflow = 'hidden';
-  }, [handleTouchMove, handleTouchStart, handleWheel]);
+  }, [handleTouchMove, handleTouchStart, handleWheel, inViewRef]);
 
   const removeEventListeners = useCallback(() => {
+    enableBodyScroll();
+
     window.removeEventListener('wheel', handleWheel);
     if ('ontouchstart' in window) {
       window.removeEventListener('touchstart', handleTouchStart);
       window.removeEventListener('touchmove', handleTouchMove);
     }
-    document.body.style.overflow = '';
   }, [handleTouchMove, handleTouchStart, handleWheel]);
 
-  useEffect(() => {
-    if (isInView) {
-      addEventListeners();
-    } else {
-      removeEventListeners();
-    }
+  useInView(inViewRef, {
+    callback: (isInView) => {
+      if (isInView) {
+        addEventListeners();
+      } else {
+        removeEventListeners();
+      }
+    },
+    threshold: inViewTreshold,
+  });
 
+  useMotionValueEvent(progress, 'change', renderImage);
+
+  useEffect(() => {
     return () => {
       removeEventListeners();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isInView]);
+  }, []);
 
   useEffect(() => {
     if (lastLoadedFramePrefix.current !== framePrefix) {
@@ -183,20 +200,20 @@ export default function ScreenRecordingBase({
 
       loadFrames(framePrefix, totalNumberOfFrames).then((frames) => {
         setImages(frames);
-        drawImage(
-          frames[0],
-          canvasRef.current!.getContext('2d') as CanvasRenderingContext2D,
-        );
+        if (canvasRef.current) {
+          drawImage(
+            frames[0],
+            canvasRef.current.getContext('2d') as CanvasRenderingContext2D,
+          );
+        }
 
         lastLoadedFramePrefix.current = framePrefix;
       });
     }
   }, [framePrefix, totalNumberOfFrames]);
 
-  useMotionValueEvent(progress, 'change', renderImage);
-
   return (
-    <div className="relative w-full bg-black" ref={ref}>
+    <div className="relative w-full bg-black">
       <canvas
         ref={canvasRef}
         width={width}

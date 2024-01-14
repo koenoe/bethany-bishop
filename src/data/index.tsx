@@ -267,6 +267,11 @@ export const PROJECTS = [
         totalNumberOfFrames: 709,
         framePrefix: '/lightyear/frames/mobile/frame_',
       },
+      button: {
+        label: 'Visit website',
+        href: 'https://lightyear.one/lightyear-2',
+        icon: <Image src={ExternalLinkIcon} alt="" />,
+      },
     },
   },
   {
