@@ -5,6 +5,7 @@ import { useMotionValue, useMotionValueEvent, useSpring } from 'framer-motion';
 import { useThrottledCallback } from 'use-debounce';
 import preloadImage from '@/utils/preloadImage';
 import useInView from '@/hooks/useInView';
+import Spinner from '../Spinner/Spinner';
 
 export type Props = Readonly<{
   height: number;
@@ -213,13 +214,16 @@ export default function ScreenRecordingBase({
   }, [framePrefix, totalNumberOfFrames]);
 
   return (
-    <div className="relative w-full bg-black">
+    <div className="relative w-full">
       <canvas
         ref={canvasRef}
         width={width}
         height={height}
         className="w-full"
       />
+      {!imagesAreLoaded && (
+        <Spinner className="!absolute inset-0 z-50 m-auto" />
+      )}
     </div>
   );
 }

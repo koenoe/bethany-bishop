@@ -1,4 +1,4 @@
-// Note: credits to https://codepen.io/devindavid/pen/poeaxEb
+/* Note: credits to https://codepen.io/devindavid/pen/poeaxEb */
 .mbp-mockup-wrapper {
   max-width: theme(screens.2xl);
   min-width: 320px;
@@ -38,7 +38,7 @@
   z-index: 1;
 }
 
-.mbp-display .display-edge {
+.display-edge {
   display: block;
   position: relative;
   width: 99.37%;
@@ -49,7 +49,7 @@
   border-radius: 2.75% / 3.8%;
 }
 
-.mbp-display .display-edge .bezel {
+.bezel {
   display: block;
   position: relative;
   width: 99.5%;
@@ -61,7 +61,7 @@
   background-color: #010101;
 }
 
-.mbp-display .display-edge .bezel .display-camera {
+.display-camera {
   width: 0.62%;
   height: 0.95%;
   margin: 1% auto;
@@ -73,7 +73,7 @@
   background-color: #303132;
 }
 
-.mbp-display .display-edge .bezel .display-frame {
+.display-frame {
   display: block;
   position: absolute;
   width: 97.65%;
@@ -86,7 +86,7 @@
   overflow: hidden;
 }
 
-.mbp-display .display-edge .bezel .below-display {
+.below-display {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -113,7 +113,7 @@
   justify-content: center;
 }
 
-.mbp-keyboard .front {
+.front {
   /* 	opacity:0; */
   width: 100%;
   height: 37.25%;
@@ -160,7 +160,7 @@
   align-items: flex-start;
 }
 
-.mbp-keyboard .opener-left {
+.opener-left {
   position: relative;
   width: 6.917%;
   height: 65.5%;
@@ -183,7 +183,7 @@
   background-blend-mode: darken;
 }
 
-.mbp-keyboard .opener-right {
+.opener-right {
   position: relative;
   width: 6.917%;
   height: 65.5%;
@@ -206,7 +206,7 @@
   background-blend-mode: darken;
 }
 
-.mbp-keyboard .bottom-left {
+.bottom-left {
   display: block;
   position: relative;
   width: 50%;
@@ -224,7 +224,7 @@
   border-bottom-left-radius: 25% 60%;
 }
 
-.mbp-keyboard .bottom-right {
+.bottom-right {
   display: block;
   position: relative;
   width: 50%;
@@ -249,7 +249,7 @@
   justify-content: center;
 }
 
-.mbp-shadow .shadow-left {
+.shadow-left {
   display: block;
   position: relative;
   width: 50%;
@@ -268,7 +268,7 @@
   border-top-left-radius: 20% 90%;
 }
 
-.mbp-shadow .shadow-right {
+.shadow-right {
   display: block;
   position: relative;
   width: 50%;

@@ -2,7 +2,7 @@ import { cx } from 'class-variance-authority';
 import { forwardRef } from 'react';
 
 // Note: credits to https://codepen.io/devindavid/pen/poeaxEb
-import './MacBookPro.css';
+import styles from './MacBookPro.module.css';
 
 export default forwardRef<
   HTMLDivElement,
@@ -12,27 +12,27 @@ export default forwardRef<
   }>
 >(function MacBookPro({ children, className }, ref) {
   return (
-    <div className={cx('mbp-mockup-wrapper', className)} ref={ref}>
-      <div className="mbp-container">
-        <div className="mbp-display with-glare">
-          <div className="display-edge">
-            <div className="bezel">
-              <div className="display-camera"></div>
-              <div className="display-frame">{children}</div>
-              <div className="below-display"></div>
+    <div className={cx(styles['mbp-mockup-wrapper'], className)} ref={ref}>
+      <div className={styles['mbp-container']}>
+        <div className={styles['mbp-display']}>
+          <div className={styles['display-edge']}>
+            <div className={styles['bezel']}>
+              <div className={styles['display-camera']}></div>
+              <div className={styles['display-frame']}>{children}</div>
+              <div className={styles['below-display']}></div>
             </div>
           </div>
         </div>
-        <div className="mbp-keyboard">
-          <div className="front">
-            <div className="opener-left"></div>
-            <div className="opener-right"></div>
+        <div className={styles['mbp-keyboard']}>
+          <div className={styles['front']}>
+            <div className={styles['opener-left']}></div>
+            <div className={styles['opener-right']}></div>
           </div>
-          <div className="bottom-left"></div>
-          <div className="bottom-right"></div>
-          <div className="mbp-shadow">
-            <div className="shadow-left"></div>
-            <div className="shadow-right"></div>
+          <div className={styles['bottom-left']}></div>
+          <div className={styles['bottom-right']}></div>
+          <div className={styles['mbp-shadow']}>
+            <div className={styles['shadow-left']}></div>
+            <div className={styles['shadow-right']}></div>
           </div>
         </div>
       </div>
