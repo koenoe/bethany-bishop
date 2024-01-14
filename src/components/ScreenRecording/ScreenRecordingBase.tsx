@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useCallback } from 'react';
+import { useEffect, useMemo, useRef, useCallback, useState } from 'react';
 import {
   useInView,
   useMotionValue,
@@ -8,6 +8,7 @@ import {
   useSpring,
 } from 'framer-motion';
 import { useThrottledCallback } from 'use-debounce';
+import preloadImage from '@/utils/preloadImage';
 
 export type Props = Readonly<{
   height: number;
@@ -17,10 +18,23 @@ export type Props = Readonly<{
   totalNumberOfFrames: number;
 }>;
 
+const THROTTLE_DURATION = 150; // ms
+
 const drawImage = (img: HTMLImageElement, ctx: CanvasRenderingContext2D) => {
   const canvas = ctx.canvas;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(img, 0, 0);
+};
+
+const loadFrames = async (framePrefix: string, totalNumberOfFrames: number) => {
+  const frames = await Promise.all(
+    Array.from({ length: totalNumberOfFrames }, (_, index) => {
+      return preloadImage(
+        `${framePrefix}${String(index + 1).padStart(4, '0')}.webp`,
+      );
+    }),
+  );
+  return frames as HTMLImageElement[];
 };
 
 export default function ScreenRecordingBase({
@@ -30,9 +44,12 @@ export default function ScreenRecordingBase({
   inViewRef,
   totalNumberOfFrames,
 }: Props) {
+  const [images, setImages] = useState<HTMLImageElement[]>([]);
+  const lastLoadedFramePrefix = useRef<string | null>(null);
   const ref = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const currentFrameRef = useRef(0);
+  const lastTouchYRef = useRef(0);
   const isInView = useInView(inViewRef ?? ref, { amount: 'all' });
   const frameProgress = useMotionValue(0);
   const progress = useSpring(frameProgress, {
@@ -41,18 +58,7 @@ export default function ScreenRecordingBase({
     restSpeed: 0.5,
     restDelta: 0.001,
   });
-
-  const images = useMemo(() => {
-    if (typeof window === 'undefined') {
-      return [];
-    }
-
-    return Array.from({ length: totalNumberOfFrames }, (_, index) => {
-      const img = new Image();
-      img.src = `${framePrefix}${String(index + 1).padStart(4, '0')}.webp`;
-      return img;
-    });
-  }, [framePrefix, totalNumberOfFrames]);
+  const imagesAreLoaded = useMemo(() => images.length > 0, [images]);
 
   const renderImage = useCallback(
     (p: number) => {
@@ -69,59 +75,123 @@ export default function ScreenRecordingBase({
   );
 
   const handleWheel = useThrottledCallback((event: WheelEvent) => {
-    if (!canvasRef.current) {
+    if (!canvasRef.current || !imagesAreLoaded) {
       return;
     }
 
-    event.preventDefault();
-
     const { deltaY } = event;
-
-    // Determine scroll direction (positive for down, negative for up)
-    const scrollDirection = deltaY > 0 ? 1 : -1;
-
-    // Calculate scroll intensity based on deltaY
-    const scrollIntensity = Math.abs(deltaY);
-
+    const direction = deltaY > 0 ? 1 : -1;
+    const intensity = Math.abs(deltaY);
     const lastFrame = totalNumberOfFrames - 1;
+    const nextFrame = Math.min(
+      Math.max(0, currentFrameRef.current + direction * intensity),
+      lastFrame,
+    );
 
     if (
-      (scrollDirection === 1 && currentFrameRef.current === lastFrame) ||
-      (scrollDirection === -1 && currentFrameRef.current === 0)
+      (direction === 1 && currentFrameRef.current === lastFrame) ||
+      (direction === -1 && currentFrameRef.current === 0)
     ) {
       document.body.style.overflow = '';
       return;
     }
 
-    // Calculate the current frame based on scroll direction and progress
-    currentFrameRef.current = Math.min(
-      Math.max(0, currentFrameRef.current + scrollDirection * scrollIntensity),
+    if (event.cancelable) {
+      event.preventDefault();
+    }
+
+    currentFrameRef.current = nextFrame;
+    progress.set(currentFrameRef.current / lastFrame);
+  }, THROTTLE_DURATION);
+
+  const handleTouchStart = useThrottledCallback((event: TouchEvent) => {
+    if (!canvasRef.current || !imagesAreLoaded) {
+      return;
+    }
+
+    lastTouchYRef.current = event.touches[0].clientY;
+  }, THROTTLE_DURATION);
+
+  const handleTouchMove = useThrottledCallback((event: TouchEvent) => {
+    if (!canvasRef.current || !imagesAreLoaded) {
+      return;
+    }
+
+    const currentTouchY = event.touches[0].clientY;
+    const lastTouchY = lastTouchYRef.current;
+    const direction = currentTouchY < lastTouchY ? 1 : -1;
+    const intensity = Math.abs(currentTouchY - lastTouchY);
+    const lastFrame = totalNumberOfFrames - 1;
+    const nextFrame = Math.min(
+      Math.max(0, currentFrameRef.current + direction * intensity),
       lastFrame,
     );
 
-    // Update progress
-    progress.set(currentFrameRef.current / lastFrame);
-  }, 100);
+    if (
+      (direction === 1 && currentFrameRef.current === lastFrame) ||
+      (direction === -1 && currentFrameRef.current === 0)
+    ) {
+      document.body.style.overflow = '';
+      return;
+    }
 
-  useEffect(() => {
-    renderImage(0);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    if (event.cancelable) {
+      event.preventDefault();
+    }
+
+    currentFrameRef.current = nextFrame;
+    lastTouchYRef.current = currentTouchY;
+    progress.set(currentFrameRef.current / lastFrame);
+  }, THROTTLE_DURATION);
+
+  const addEventListeners = useCallback(() => {
+    window.addEventListener('wheel', handleWheel, { passive: false });
+    if ('ontouchstart' in window) {
+      window.addEventListener('touchstart', handleTouchStart, {
+        passive: false,
+      });
+      window.addEventListener('touchmove', handleTouchMove, { passive: false });
+    }
+    document.body.style.overflow = 'hidden';
+  }, [handleTouchMove, handleTouchStart, handleWheel]);
+
+  const removeEventListeners = useCallback(() => {
+    window.removeEventListener('wheel', handleWheel);
+    if ('ontouchstart' in window) {
+      window.removeEventListener('touchstart', handleTouchStart);
+      window.removeEventListener('touchmove', handleTouchMove);
+    }
+    document.body.style.overflow = '';
+  }, [handleTouchMove, handleTouchStart, handleWheel]);
 
   useEffect(() => {
     if (isInView) {
-      window.addEventListener('wheel', handleWheel, { passive: false });
-      document.body.style.overflow = 'hidden';
+      addEventListeners();
     } else {
-      window.removeEventListener('wheel', handleWheel);
-      document.body.style.overflow = '';
+      removeEventListeners();
     }
 
     return () => {
-      window.removeEventListener('wheel', handleWheel);
-      document.body.style.overflow = '';
+      removeEventListeners();
     };
-  }, [handleWheel, isInView]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isInView]);
+
+  useEffect(() => {
+    if (lastLoadedFramePrefix.current !== framePrefix) {
+      lastLoadedFramePrefix.current = null;
+
+      loadFrames(framePrefix, totalNumberOfFrames).then((frames) => {
+        setImages(frames);
+        drawImage(
+          frames[0],
+          canvasRef.current!.getContext('2d') as CanvasRenderingContext2D,
+        );
+
+        lastLoadedFramePrefix.current = framePrefix;
+      });
+    }
+  }, [framePrefix, totalNumberOfFrames]);
 
   useMotionValueEvent(progress, 'change', renderImage);
 
