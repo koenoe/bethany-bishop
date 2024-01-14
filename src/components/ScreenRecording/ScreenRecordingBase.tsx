@@ -17,6 +17,8 @@ export type Props = Readonly<{
 }>;
 
 const THROTTLE_DURATION = 150; // ms
+const SENSITIVITY_FACTOR_TOUCH = 5;
+const SENSITIVITY_FACTOR_WHEEL = 2;
 
 const drawImage = (img: HTMLImageElement, ctx: CanvasRenderingContext2D) => {
   const canvas = ctx.canvas;
@@ -86,7 +88,7 @@ export default function ScreenRecordingBase({
 
     const { deltaY } = event;
     const direction = deltaY > 0 ? 1 : -1;
-    const intensity = Math.abs(deltaY);
+    const intensity = Math.abs(deltaY) / SENSITIVITY_FACTOR_WHEEL;
     const lastFrame = totalNumberOfFrames - 1;
     const nextFrame = Math.min(
       Math.max(0, currentFrameRef.current + direction * intensity),
@@ -121,11 +123,11 @@ export default function ScreenRecordingBase({
       return;
     }
 
-    const sensitivityFactor = 5;
     const currentTouchY = event.touches[0].clientY;
     const lastTouchY = lastTouchYRef.current;
     const direction = currentTouchY < lastTouchY ? 1 : -1;
-    const intensity = Math.abs(currentTouchY - lastTouchY) / sensitivityFactor;
+    const intensity =
+      Math.abs(currentTouchY - lastTouchY) / SENSITIVITY_FACTOR_TOUCH;
     const lastFrame = totalNumberOfFrames - 1;
     const nextFrame = Math.min(
       Math.max(0, currentFrameRef.current + direction * intensity),
