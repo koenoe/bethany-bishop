@@ -17,7 +17,7 @@ export type Props = Readonly<{
 }>;
 
 const THROTTLE_DURATION = 150; // ms
-const SENSITIVITY_FACTOR_TOUCH = 8;
+const SENSITIVITY_FACTOR_TOUCH = 6;
 const SENSITIVITY_FACTOR_WHEEL = 2;
 
 const drawImage = (img: HTMLImageElement, ctx: CanvasRenderingContext2D) => {
