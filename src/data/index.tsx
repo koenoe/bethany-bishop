@@ -258,13 +258,13 @@ export const PROJECTS = [
       desktop: {
         width: 1920,
         height: 1080,
-        totalNumberOfFrames: 470,
+        totalNumberOfFrames: 587,
         framePrefix: '/lightyear/frames/desktop/frame_',
       },
       mobile: {
         width: 390,
         height: 830,
-        totalNumberOfFrames: 272,
+        totalNumberOfFrames: 340,
         framePrefix: '/lightyear/frames/mobile/frame_',
       },
       button: {
