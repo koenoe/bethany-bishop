@@ -24,6 +24,10 @@ export const button = cva(
     '[&>img]:max-w-5',
     '[&>img]:md:max-h-7',
     '[&>img]:md:max-w-7',
+    'transition-transform',
+    'scale-100',
+    'hover:scale-105',
+    'transform-gpu',
   ],
   {
     variants: {
@@ -35,9 +39,9 @@ export const button = cva(
           'hover:border-white/75',
           'box-content',
         ],
-        primary: ['bg-primary', 'hover:bg-primary/90', '!text-white'],
-        secondary: ['bg-secondary', 'hover:bg-secondary/90', '!text-white'],
-        neutral: ['bg-gray-200', 'hover:bg-gray-100', '!text-gray-400'],
+        primary: ['bg-primary', '!text-white'],
+        secondary: ['bg-secondary', '!text-white'],
+        neutral: ['bg-gray-200', '!text-gray-400'],
       },
     },
   },
