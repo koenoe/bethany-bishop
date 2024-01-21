@@ -12,13 +12,16 @@ type Props = (typeof PROJECTS)[number] &
 export default function WorkThumbnail({ className, thumbnail, slug }: Props) {
   return (
     <Link
-      className={cx('relative block h-[450px] w-full md:h-[750px]', className)}
+      className={cx(
+        'group relative block h-[450px] w-full md:h-[750px]',
+        className,
+      )}
       href={`/work/${slug}`}
     >
       <Image
         src={thumbnail.image.src}
         alt={thumbnail.image.alt}
-        className="absolute inset-0 h-full w-full object-cover object-top"
+        className="absolute inset-0 h-full w-full transform-gpu object-cover object-top transition-transform group-hover:scale-105"
         placeholder="blur"
       />
       <div className="absolute inset-0 bg-black opacity-35" />

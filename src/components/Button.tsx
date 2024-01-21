@@ -8,7 +8,7 @@ export const button = cva(
   [
     'px-4',
     'py-3',
-    'md:px-6',
+    'md:px-5',
     'md:py-4',
     'font-bold',
     'text-midnight',
@@ -32,13 +32,7 @@ export const button = cva(
   {
     variants: {
       intent: {
-        outline: [
-          '!text-white',
-          'border-2',
-          'border-white',
-          'hover:border-white/75',
-          'box-content',
-        ],
+        outline: ['!text-white', 'border-2', 'border-white', 'box-content'],
         primary: ['bg-primary', '!text-white'],
         secondary: ['bg-secondary', '!text-white'],
         neutral: ['bg-gray-200', '!text-gray-400'],
