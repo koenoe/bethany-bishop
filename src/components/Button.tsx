@@ -24,10 +24,6 @@ export const button = cva(
     '[&>img]:max-w-5',
     '[&>img]:md:max-h-7',
     '[&>img]:md:max-w-7',
-    'transition-transform',
-    'scale-100',
-    'hover:scale-105',
-    'transform-gpu',
   ],
   {
     variants: {
