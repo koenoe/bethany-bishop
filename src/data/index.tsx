@@ -182,7 +182,7 @@ export const PROJECTS = [
       label: 'Read more',
     },
     intro: {
-      title: 'Range scripted by sunlight',
+      title: 'Range gifted by sunlight',
       description: (
         <>
           <p>
@@ -211,7 +211,7 @@ export const PROJECTS = [
         alt: 'Lightyear Cars',
       },
       button: {
-        label: 'Join the countdown',
+        label: 'Scripting Lightyear 0',
         href: '/lightyear/countdown.mp4',
         icon: <Image src={PlayIcon} alt="" />,
       },
@@ -219,36 +219,36 @@ export const PROJECTS = [
     highlights: [
       {
         title: 'An electric shift - Solar electric vehicles explained',
-        description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
+        description: `Why it'll take more than conventional electric vehicles to scale clean mobility.`,
         button: {
-          label: 'Read blog',
+          label: 'Read my blog',
           href: 'https://lightyear.one/articles/a-powerful-shift-why-it-ll-take-more-than-conventional-electric-vehicles-to-scale-clean-mobility',
           icon: <Image src={ExternalLinkIcon} alt="" />,
         },
       },
       {
-        title: 'Product launch - solar electric specs',
-        description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
+        title: 'Product launch - Lightyear 0 deep dive',
+        description: `Discover the specs that reinvent the wheel.`,
         button: {
-          label: 'Read blog',
+          label: 'Read my blog',
           href: 'https://lightyear.one/articles/a-deep-dive-into-lightyear-0-how-far-can-clean-solar-kilometres-take-us',
           icon: <Image src={ExternalLinkIcon} alt="" />,
         },
       },
       {
         title: 'Unmatched economy - Efficient design explained',
-        description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
+        description: `What makes Lightyear 0 the most efficient electric car in the world?.`,
         button: {
-          label: 'Watch video',
+          label: 'Watch my script',
           href: '/lightyear/efficient-design-explained.mp4',
           icon: <Image src={PlayIcon} alt="" />,
         },
       },
       {
-        title: 'Scripting sustainable mobility - Lightyear 0 production video',
-        description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
+        title: 'Lightyear 0 launch campaign - production has started',
+        description: `Announcing the production of the world's first solar car.`,
         button: {
-          label: 'Watch video',
+          label: 'Watch my script',
           href: '/lightyear/production.mp4',
           icon: <Image src={PlayIcon} alt="" />,
         },
