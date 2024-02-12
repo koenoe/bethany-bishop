@@ -12,8 +12,8 @@ export const button = cva(
     'md:py-4',
     'font-bold',
     'text-midnight',
-    'md:text-2xl',
-    'text-base',
+    'md:text-xl',
+    'text-sm',
     'inline-flex',
     'items-center',
     'content-center',
@@ -24,6 +24,7 @@ export const button = cva(
     '[&>img]:max-w-5',
     '[&>img]:md:max-h-7',
     '[&>img]:md:max-w-7',
+    'text-heading-alt',
   ],
   {
     variants: {

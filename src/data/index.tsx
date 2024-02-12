@@ -190,14 +190,15 @@ export const PROJECTS = [
             centuries, pressed to conquer the horizon.
           </p>
           <p>
-            Mobility began as an instinct but today it's essential, and our need
-            to move has taken us a step too far. The energy crisis is enduring.
-            Climate change is advancing.
+            Mobility began as an instinct, but today it's essential, and our
+            need to move has taken us a step too far. The energy crisis is
+            enduring. Climate change is advancing.
           </p>
           <p>
             The time has come to engineer a new reality. Like our ancestors,
-            we'll break ground to discover new ways. Better ways. Letting
-            curiosity lead, we'll forge paths to a more balanced world.
+            we'll break ground to discover pioneering possibility. We'll follow
+            our instincts, letting curiosity forge paths to a more balanced
+            world.
           </p>
           <p>
             There will be no looking back at the way things should have been,
@@ -211,7 +212,7 @@ export const PROJECTS = [
         alt: 'Lightyear Cars',
       },
       button: {
-        label: 'Scripting Lightyear 0',
+        label: 'Learn more',
         href: '/lightyear/countdown.mp4',
         icon: <Image src={PlayIcon} alt="" />,
       },
@@ -379,32 +380,35 @@ export const PROJECTS = [
             classification of small objects in airspace.
           </p>
           <p>
-            Our technology spans worldwide, but it began in The Netherlands.
-            With the Royal Netherlands Air Force and the European Space Agency
-            (ESA), TNO developed unique algorithms to use radar. The technology
-            had huge potential, and Robin Radar Systems was spun out in 2010.
+            Our technology is installed all over the globe, but it all started
+            in The Netherlands. In cooperation with the Royal Netherlands Air
+            Force, and later, the European Space Agency (ESA), TNO began
+            developing unique algorithms to use radar. The technology had huge
+            potential, and Robin Radar Systems was spun out of TNO in 2010. The
+            rest, as they say, is history.
+          </p>
+          <p>A lot has changed since, and today’s market demands even more.</p>
+          <p>
+            Every day, airports and airfields are confronted with the difficult
+            task of mitigating the risk of bird strikes. Then there’s drones,
+            the entirely unpredictable threat plaguing defence and security
+            teams and critical infrastructure.
           </p>
           <p>
-            The rest, as they say, is history. A lot has changed since, and
-            today's market demands even more.
-          </p>
-          <p>
-            Every day, airports and airfields are confronted with the
-            disasterous risk of bird strikes. Then there's drones, an entirely
-            unpredictable threat plaguing defence and security teams everywhere.
-          </p>
-          <p>
-            Our radars are made for every mission. Unlike human observers, they
-            don't need rest and see in all weather, day and night. They provide
-            detailed insight in real-time and distinguish birds from drones.
+            Our radars have been developed for these very challenges. Unlike
+            human observers, radars don’t need rest and can see in all weather,
+            day and night. They provide detailed insight in real-time and
+            distinguish birds from drones with innovative micro-doppler
+            technology.
           </p>
           <p>
             They're built for accuracy, durability and ease of use. You don't
-            have to be a rocket scientist to operate our systems, or even need a
-            radar scientist!
+            have to be a rocket scientist to operate our systems, you don't even
+            need to be a radar scientist!
           </p>
           <p>
-            But don't take our word for it. Reach out for a demonstration today.
+            But don't just take our word for it. Reach out for a demonstration
+            today.
           </p>
         </>
       ),
