@@ -111,8 +111,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      {/* FIXME: remove this when the site is ready */}
-      <meta name="robots" content="noindex,nofollow" />
       <body className={styles()}>
         {children}
         <Analytics />

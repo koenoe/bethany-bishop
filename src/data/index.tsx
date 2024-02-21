@@ -275,191 +275,191 @@ export const PROJECTS = [
       },
     },
   },
-  {
-    slug: 'ntu',
-    thumbnail: {
-      title: 'Notts Trent University',
-      subtitle: 'Inspiring sport in higher education',
-      image: {
-        src: NtuThumbnail,
-        alt: 'Notts Trent University',
-      },
-      label: 'Read more',
-    },
-    intro: {
-      title: 'Love sport? Join the club!',
-      description: (
-        <>
-          <p>
-            Did you know that taking part in fitness and sport could boost your
-            academic studies? Really! Regular exercise can help reduce stress,
-            increase your energy levels and – for those lectures – boost
-            concentration.
-          </p>
-          <p>
-            So, whether you're wanting to hone your skills in a familiar field
-            or jump feet-first into a whole new ball game, we've got you. With
-            over 60 sports clubs to try, heaps of fun commitment-free sessions
-            and outstanding fitness facilities, you can participate at your own
-            pace.
-          </p>
-          <p>
-            Come along to the Freshers Fair NTU Sport stand to find out more
-            about the clubs, classes and sessions we know you'll love.
-          </p>
-        </>
-      ),
-      image: {
-        src: NtuIntro,
-        alt: 'Notts Trent University',
-      },
-      button: {
-        label: 'Browse the brochure',
-        href: '/ntu/brochure.pdf',
-        icon: <Image src={DocumentIcon} alt="" />,
-      },
-    },
-    highlights: [
-      {
-        title: `Student Claire hopes charity challenge will help change the world for disabled skiers and snowboarders`,
-        description: `NTU student Claire Ryan is pushing 200km to raise money and awareness for Snow Buddies UK, a charity that supports skiers and snowboarders with disabilities.`,
-        button: {
-          label: 'Read blog',
-          href: 'https://www.ntu.ac.uk/about-us/news/news-articles/2019/08/student-claire-hopes-charity-challenge-will-help-change-the-world-for-disabled-skiers-and-snowboarders',
-          icon: <Image src={ExternalLinkIcon} alt="" />,
-        },
-      },
-      {
-        title: 'This Girl Can Week returns to NTU',
-        description: `Trent This Girl Can Week is back, and we can't wait for female students to enjoy all that we have in store!`,
-        button: {
-          label: 'Read blog',
-          href: 'https://www.ntu.ac.uk/about-us/news/news-articles/2018/10/this-girl-can-week-returns-to-ntu',
-          icon: <Image src={ExternalLinkIcon} alt="" />,
-        },
-      },
-      {
-        title:
-          'NTU Welcome world tennis stars to campus for Nature Valley Open',
-        description: `World tennis stars flock to NTU's Centre after unprecedented summer rainfall puts Nature Valley Open grass pitches out of play this June.`,
-        button: {
-          label: 'Read blog',
-          href: 'https://www.ntu.ac.uk/about-us/news/news-articles/2019/06/ntu-welcome-world-tennis-stars-to-campus-for-nature-valley-open',
-          icon: <Image src={ExternalLinkIcon} alt="" />,
-        },
-      },
-      {
-        title: 'Varsity full-time roundup',
-        description: `With the Varsity 2018 now concluded, we look back on NTU's sporting performances across a very exciting series.`,
-        button: {
-          label: 'Read blog',
-          href: 'https://www.ntu.ac.uk/about-us/news/news-articles/2018/05/varsity-full-time-roundup',
-          icon: <Image src={ExternalLinkIcon} alt="" />,
-        },
-      },
-    ],
-    recordings: null,
-  },
-  {
-    slug: 'robin-radar',
-    thumbnail: {
-      title: 'Robin Radar',
-      subtitle: 'Writing leading B2B technology',
-      image: {
-        src: RobinRadarThumbnail,
-        alt: 'Robin Radar',
-      },
-      label: 'Read more',
-    },
-    intro: {
-      title: 'Radar love',
-      description: (
-        <>
-          <p>
-            We are Robin Radar Systems. Technology leader in tracking and
-            classification of small objects in airspace.
-          </p>
-          <p>
-            Our technology is installed all over the globe, but it all started
-            in The Netherlands. In cooperation with the Royal Netherlands Air
-            Force, and later, the European Space Agency (ESA), TNO began
-            developing unique algorithms to use radar. The technology had huge
-            potential, and Robin Radar Systems was spun out of TNO in 2010. The
-            rest, as they say, is history.
-          </p>
-          <p>A lot has changed since, and today’s market demands even more.</p>
-          <p>
-            Every day, airports and airfields are confronted with the difficult
-            task of mitigating the risk of bird strikes. Then there’s drones,
-            the entirely unpredictable threat plaguing defence and security
-            teams and critical infrastructure.
-          </p>
-          <p>
-            Our radars have been developed for these very challenges. Unlike
-            human observers, radars don’t need rest and can see in all weather,
-            day and night. They provide detailed insight in real-time and
-            distinguish birds from drones with innovative micro-doppler
-            technology.
-          </p>
-          <p>
-            They're built for accuracy, durability and ease of use. You don't
-            have to be a rocket scientist to operate our systems, you don't even
-            need to be a radar scientist!
-          </p>
-          <p>
-            But don't just take our word for it. Reach out for a demonstration
-            today.
-          </p>
-        </>
-      ),
-      image: {
-        src: RobinRadarIntro,
-        alt: 'Robin Radar',
-      },
-      button: {
-        label: 'Browse the brochure',
-        href: '',
-        icon: <Image src={DocumentIcon} alt="" />,
-      },
-    },
-    highlights: [
-      {
-        title: 'An electric shift - Solar electric vehicles explained',
-        description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
-        button: {
-          label: 'Read more',
-          href: '',
-          icon: <Image src={ExternalLinkIcon} alt="" />,
-        },
-      },
-      {
-        title: 'Unmatched economy - Efficient design explained',
-        description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
-        button: {
-          label: 'Read more',
-          href: '',
-          icon: <Image src={ExternalLinkIcon} alt="" />,
-        },
-      },
-      {
-        title: 'Scripting sustainable mobility - Lightyear 0 production video',
-        description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
-        button: {
-          label: 'Read more',
-          href: '',
-          icon: <Image src={ExternalLinkIcon} alt="" />,
-        },
-      },
-      {
-        title: 'Product launch - solar electric specs',
-        description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
-        button: {
-          label: 'Read more',
-          href: '',
-          icon: <Image src={ExternalLinkIcon} alt="" />,
-        },
-      },
-    ],
-    recordings: null,
-  },
+  // {
+  //   slug: 'ntu',
+  //   thumbnail: {
+  //     title: 'Notts Trent University',
+  //     subtitle: 'Inspiring sport in higher education',
+  //     image: {
+  //       src: NtuThumbnail,
+  //       alt: 'Notts Trent University',
+  //     },
+  //     label: 'Read more',
+  //   },
+  //   intro: {
+  //     title: 'Love sport? Join the club!',
+  //     description: (
+  //       <>
+  //         <p>
+  //           Did you know that taking part in fitness and sport could boost your
+  //           academic studies? Really! Regular exercise can help reduce stress,
+  //           increase your energy levels and – for those lectures – boost
+  //           concentration.
+  //         </p>
+  //         <p>
+  //           So, whether you're wanting to hone your skills in a familiar field
+  //           or jump feet-first into a whole new ball game, we've got you. With
+  //           over 60 sports clubs to try, heaps of fun commitment-free sessions
+  //           and outstanding fitness facilities, you can participate at your own
+  //           pace.
+  //         </p>
+  //         <p>
+  //           Come along to the Freshers Fair NTU Sport stand to find out more
+  //           about the clubs, classes and sessions we know you'll love.
+  //         </p>
+  //       </>
+  //     ),
+  //     image: {
+  //       src: NtuIntro,
+  //       alt: 'Notts Trent University',
+  //     },
+  //     button: {
+  //       label: 'Browse the brochure',
+  //       href: '/ntu/brochure.pdf',
+  //       icon: <Image src={DocumentIcon} alt="" />,
+  //     },
+  //   },
+  //   highlights: [
+  //     {
+  //       title: `Student Claire hopes charity challenge will help change the world for disabled skiers and snowboarders`,
+  //       description: `NTU student Claire Ryan is pushing 200km to raise money and awareness for Snow Buddies UK, a charity that supports skiers and snowboarders with disabilities.`,
+  //       button: {
+  //         label: 'Read blog',
+  //         href: 'https://www.ntu.ac.uk/about-us/news/news-articles/2019/08/student-claire-hopes-charity-challenge-will-help-change-the-world-for-disabled-skiers-and-snowboarders',
+  //         icon: <Image src={ExternalLinkIcon} alt="" />,
+  //       },
+  //     },
+  //     {
+  //       title: 'This Girl Can Week returns to NTU',
+  //       description: `Trent This Girl Can Week is back, and we can't wait for female students to enjoy all that we have in store!`,
+  //       button: {
+  //         label: 'Read blog',
+  //         href: 'https://www.ntu.ac.uk/about-us/news/news-articles/2018/10/this-girl-can-week-returns-to-ntu',
+  //         icon: <Image src={ExternalLinkIcon} alt="" />,
+  //       },
+  //     },
+  //     {
+  //       title:
+  //         'NTU Welcome world tennis stars to campus for Nature Valley Open',
+  //       description: `World tennis stars flock to NTU's Centre after unprecedented summer rainfall puts Nature Valley Open grass pitches out of play this June.`,
+  //       button: {
+  //         label: 'Read blog',
+  //         href: 'https://www.ntu.ac.uk/about-us/news/news-articles/2019/06/ntu-welcome-world-tennis-stars-to-campus-for-nature-valley-open',
+  //         icon: <Image src={ExternalLinkIcon} alt="" />,
+  //       },
+  //     },
+  //     {
+  //       title: 'Varsity full-time roundup',
+  //       description: `With the Varsity 2018 now concluded, we look back on NTU's sporting performances across a very exciting series.`,
+  //       button: {
+  //         label: 'Read blog',
+  //         href: 'https://www.ntu.ac.uk/about-us/news/news-articles/2018/05/varsity-full-time-roundup',
+  //         icon: <Image src={ExternalLinkIcon} alt="" />,
+  //       },
+  //     },
+  //   ],
+  //   recordings: null,
+  // },
+  // {
+  //   slug: 'robin-radar',
+  //   thumbnail: {
+  //     title: 'Robin Radar',
+  //     subtitle: 'Writing leading B2B technology',
+  //     image: {
+  //       src: RobinRadarThumbnail,
+  //       alt: 'Robin Radar',
+  //     },
+  //     label: 'Read more',
+  //   },
+  //   intro: {
+  //     title: 'Radar love',
+  //     description: (
+  //       <>
+  //         <p>
+  //           We are Robin Radar Systems. Technology leader in tracking and
+  //           classification of small objects in airspace.
+  //         </p>
+  //         <p>
+  //           Our technology is installed all over the globe, but it all started
+  //           in The Netherlands. In cooperation with the Royal Netherlands Air
+  //           Force, and later, the European Space Agency (ESA), TNO began
+  //           developing unique algorithms to use radar. The technology had huge
+  //           potential, and Robin Radar Systems was spun out of TNO in 2010. The
+  //           rest, as they say, is history.
+  //         </p>
+  //         <p>A lot has changed since, and today’s market demands even more.</p>
+  //         <p>
+  //           Every day, airports and airfields are confronted with the difficult
+  //           task of mitigating the risk of bird strikes. Then there’s drones,
+  //           the entirely unpredictable threat plaguing defence and security
+  //           teams and critical infrastructure.
+  //         </p>
+  //         <p>
+  //           Our radars have been developed for these very challenges. Unlike
+  //           human observers, radars don’t need rest and can see in all weather,
+  //           day and night. They provide detailed insight in real-time and
+  //           distinguish birds from drones with innovative micro-doppler
+  //           technology.
+  //         </p>
+  //         <p>
+  //           They're built for accuracy, durability and ease of use. You don't
+  //           have to be a rocket scientist to operate our systems, you don't even
+  //           need to be a radar scientist!
+  //         </p>
+  //         <p>
+  //           But don't just take our word for it. Reach out for a demonstration
+  //           today.
+  //         </p>
+  //       </>
+  //     ),
+  //     image: {
+  //       src: RobinRadarIntro,
+  //       alt: 'Robin Radar',
+  //     },
+  //     button: {
+  //       label: 'Browse the brochure',
+  //       href: '',
+  //       icon: <Image src={DocumentIcon} alt="" />,
+  //     },
+  //   },
+  //   highlights: [
+  //     {
+  //       title: 'An electric shift - Solar electric vehicles explained',
+  //       description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
+  //       button: {
+  //         label: 'Read more',
+  //         href: '',
+  //         icon: <Image src={ExternalLinkIcon} alt="" />,
+  //       },
+  //     },
+  //     {
+  //       title: 'Unmatched economy - Efficient design explained',
+  //       description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
+  //       button: {
+  //         label: 'Read more',
+  //         href: '',
+  //         icon: <Image src={ExternalLinkIcon} alt="" />,
+  //       },
+  //     },
+  //     {
+  //       title: 'Scripting sustainable mobility - Lightyear 0 production video',
+  //       description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
+  //       button: {
+  //         label: 'Read more',
+  //         href: '',
+  //         icon: <Image src={ExternalLinkIcon} alt="" />,
+  //       },
+  //     },
+  //     {
+  //       title: 'Product launch - solar electric specs',
+  //       description: `A powerful shift — why it'll take more than conventional electric vehicles to scale clean mobility.`,
+  //       button: {
+  //         label: 'Read more',
+  //         href: '',
+  //         icon: <Image src={ExternalLinkIcon} alt="" />,
+  //       },
+  //     },
+  //   ],
+  //   recordings: null,
+  // },
 ] as const;
