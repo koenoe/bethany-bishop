@@ -234,30 +234,11 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'An electric shift - Solar electric vehicles explained',
-        description: `Why it'll take more than conventional electric vehicles to scale clean mobility.`,
+        title: 'Product launch - Lightyear 0 deep dive',
+        description: `Discover the specs that reinvent the wheel.`,
         button: {
           label: 'Read my blog',
-          href: 'https://lightyear.one/articles/a-powerful-shift-why-it-ll-take-more-than-conventional-electric-vehicles-to-scale-clean-mobility',
-          icon: <Image src={ExternalLinkIcon} alt="" />,
-        },
-      },
-      {
-        title: 'Sustainability',
-        thumbnail: {
-          image: {
-            src: LightyearSustainabilityThumbnail,
-            alt: 'Sustainability',
-          },
-          href: '/lightyear/sustainability.mp4',
-        },
-      },
-      {
-        title: 'Educational — How mobility fits into human nature',
-        description: ``,
-        button: {
-          label: 'Read my blog',
-          href: 'https://lightyear.one/articles/clean-mobility-is-built-into-our-dna-how-our-cars-tap-into-human-instinct',
+          href: 'https://lightyear.one/articles/a-deep-dive-into-lightyear-0-how-far-can-clean-solar-kilometres-take-us',
           icon: <Image src={ExternalLinkIcon} alt="" />,
         },
       },
@@ -272,11 +253,30 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'Product launch - Lightyear 0 deep dive',
-        description: `Discover the specs that reinvent the wheel.`,
+        title: 'Educational — How mobility fits into human nature',
+        description: ``,
         button: {
           label: 'Read my blog',
-          href: 'https://lightyear.one/articles/a-deep-dive-into-lightyear-0-how-far-can-clean-solar-kilometres-take-us',
+          href: 'https://lightyear.one/articles/clean-mobility-is-built-into-our-dna-how-our-cars-tap-into-human-instinct',
+          icon: <Image src={ExternalLinkIcon} alt="" />,
+        },
+      },
+      {
+        title: 'Sustainability',
+        thumbnail: {
+          image: {
+            src: LightyearSustainabilityThumbnail,
+            alt: 'Sustainability',
+          },
+          href: '/lightyear/sustainability.mp4',
+        },
+      },
+      {
+        title: 'An electric shift - Solar electric vehicles explained',
+        description: `Why it'll take more than conventional electric vehicles to scale clean mobility.`,
+        button: {
+          label: 'Read my blog',
+          href: 'https://lightyear.one/articles/a-powerful-shift-why-it-ll-take-more-than-conventional-electric-vehicles-to-scale-clean-mobility',
           icon: <Image src={ExternalLinkIcon} alt="" />,
         },
       },
