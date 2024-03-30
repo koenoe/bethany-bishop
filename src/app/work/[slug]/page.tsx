@@ -18,6 +18,12 @@ type Params = Readonly<{
 const findProject = (slug: string) =>
   PROJECTS.find((project) => project.slug === slug);
 
+export async function generateStaticParams() {
+  return PROJECTS.map((project) => ({
+    slug: project.slug,
+  }));
+}
+
 export async function generateMetadata({
   params,
 }: {
