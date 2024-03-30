@@ -14,11 +14,25 @@ export interface Props extends React.AllHTMLAttributes<HTMLDivElement> {
 export default function Highlights({ project }: Props) {
   const isLg = useBreakpoint('lg');
   const groups = useMemo(() => {
-    const itemsPerGroup = isLg ? 3 : 1;
-    const groupSize = Math.ceil(project.highlights.length / itemsPerGroup);
-    return Array.from({ length: itemsPerGroup }, (_, i) =>
-      project.highlights.slice(i * groupSize, (i + 1) * groupSize),
-    );
+    // Determine the number of groups based on the breakpoint.
+    const numberOfGroups = isLg ? 3 : 1;
+    const totalItems = project.highlights.length;
+    let itemsPerGroup = Math.floor(totalItems / numberOfGroups);
+    let remainder = totalItems % numberOfGroups;
+
+    // Function to calculate the end index for slicing the array.
+    const calculateEndIndex = (startIndex: number, groupIndex: number) => {
+      // Add an extra item to the groups until the remainder is distributed.
+      return startIndex + itemsPerGroup + (groupIndex < remainder ? 1 : 0);
+    };
+
+    let startIndex = 0;
+    return Array.from({ length: numberOfGroups }, (_, groupIndex) => {
+      const endIndex = calculateEndIndex(startIndex, groupIndex);
+      const group = project.highlights.slice(startIndex, endIndex);
+      startIndex = endIndex; // Update the start index for the next group.
+      return group;
+    });
   }, [isLg, project.highlights]);
 
   return (

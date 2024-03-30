@@ -26,6 +26,8 @@ import LightyearIntro from '@/assets/projects/lightyear/intro.jpg';
 import LightyearProductionThumbnail from '@/assets/projects/lightyear/highlights/production.jpg';
 import LightyearEfficientDesignThumbnail from '@/assets/projects/lightyear/highlights/efficient-design.jpg';
 import LightyearCountdownThumbnail from '@/assets/projects/lightyear/highlights/countdown.jpg';
+import LightyearSustainabilityThumbnail from '@/assets/projects/lightyear/highlights/sustainability.jpg';
+import LightyearSolarChargingThumbnail from '@/assets/projects/lightyear/highlights/solar-charging.jpg';
 
 import NtuThumbnail from '@/assets/projects/ntu/thumbnail.jpg';
 import NtuIntro from '@/assets/projects/ntu/intro.jpg';
@@ -241,6 +243,35 @@ export const PROJECTS = [
         },
       },
       {
+        title: 'Sustainability',
+        thumbnail: {
+          image: {
+            src: LightyearSustainabilityThumbnail,
+            alt: 'Sustainability',
+          },
+          href: '/lightyear/sustainability.mp4',
+        },
+      },
+      {
+        title: 'Educational — How mobility fits into human nature',
+        description: ``,
+        button: {
+          label: 'Read my blog',
+          href: 'https://lightyear.one/articles/clean-mobility-is-built-into-our-dna-how-our-cars-tap-into-human-instinct',
+          icon: <Image src={ExternalLinkIcon} alt="" />,
+        },
+      },
+      {
+        title: 'Solar electric vehicles (SEVs) - solar charging explained',
+        thumbnail: {
+          image: {
+            src: LightyearSolarChargingThumbnail,
+            alt: 'Solar electric vehicles (SEVs) - solar charging explained',
+          },
+          href: '/lightyear/solar-charging.mp4',
+        },
+      },
+      {
         title: 'Product launch - Lightyear 0 deep dive',
         description: `Discover the specs that reinvent the wheel.`,
         button: {
@@ -260,6 +291,15 @@ export const PROJECTS = [
         },
       },
       {
+        title: 'Aspirational — Driving beyond boundaries for Earth Day 2022',
+        description: ``,
+        button: {
+          label: 'Read my blog',
+          href: 'https://lightyear.one/articles/earth-day-2022-driving-beyond-boundaries',
+          icon: <Image src={ExternalLinkIcon} alt="" />,
+        },
+      },
+      {
         title: 'Lightyear 0 launch campaign - production has started',
         thumbnail: {
           image: {
@@ -267,6 +307,16 @@ export const PROJECTS = [
             alt: 'Lightyear 0 launch campaign - production has started',
           },
           href: '/lightyear/production.mp4',
+        },
+      },
+
+      {
+        title: 'Educational — Solar car potential, beyond driving',
+        description: ``,
+        button: {
+          label: 'Read my blog',
+          href: 'https://lightyear.one/articles/vehicles-that-power-our-homes-how-evs-and-sevs-can-rebalance-our-relationship-with-energy',
+          icon: <Image src={ExternalLinkIcon} alt="" />,
         },
       },
     ],
