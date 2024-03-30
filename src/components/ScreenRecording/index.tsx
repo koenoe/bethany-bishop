@@ -1,7 +1,5 @@
 'use client';
 
-import { useRef } from 'react';
-
 import { PROJECTS } from '@/data';
 import useBreakpoint from '@/hooks/useBreakpoint';
 import ScreenRecordingDesktop from './ScreenRecordingDesktop';

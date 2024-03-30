@@ -3,9 +3,6 @@
 import { PROJECTS } from '@/data';
 
 import Block from './Block';
-import Card from './Card';
-import Button from './Button';
-import ButtonLink from './ButtonLink';
 import Highlight from './Highlight';
 import useBreakpoint from '@/hooks/useBreakpoint';
 import { useMemo } from 'react';
