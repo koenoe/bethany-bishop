@@ -1,11 +1,14 @@
 'use client';
 
+import { motion } from 'framer-motion';
+import { useMemo } from 'react';
+
 import { PROJECTS } from '@/data';
+import useBreakpoint from '@/hooks/useBreakpoint';
 
 import Block from './Block';
 import Highlight from './Highlight';
-import useBreakpoint from '@/hooks/useBreakpoint';
-import { useMemo } from 'react';
+import { childVariants, containerVariants } from '@/variants';
 
 export interface Props extends React.AllHTMLAttributes<HTMLDivElement> {
   project: (typeof PROJECTS)[number];
@@ -37,15 +40,25 @@ export default function Highlights({ project }: Props) {
 
   return (
     <Block>
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+      <motion.div
+        className="grid grid-cols-1 gap-4 lg:grid-cols-3"
+        variants={containerVariants}
+        viewport={{ once: true, amount: 0.25 }}
+        initial="hidden"
+        whileInView="visible"
+      >
         {groups.map((group, index) => (
-          <div key={index} className="grid gap-4">
+          <motion.div
+            key={index}
+            className="grid gap-4"
+            variants={childVariants}
+          >
             {group.map((highlight) => (
               <Highlight key={highlight.title} highlight={highlight} />
             ))}
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </Block>
   );
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 import Block from './Block';
 import Card from './Card';
@@ -12,15 +12,12 @@ type Props = Omit<React.AllHTMLAttributes<HTMLDivElement>, 'title'> &
     button?: React.ReactElement;
   }>;
 
-export default function Intro({
-  button,
-  image,
-  title,
-  description,
-  ...props
-}: Props) {
+export default forwardRef<HTMLDivElement, Props>(function Intro(
+  { button, image, title, description, ...props },
+  ref,
+) {
   return (
-    <Block {...props}>
+    <Block ref={ref} {...props}>
       <div className="flex flex-col lg:flex-row">
         <div className="relative mb-6 ml-auto w-full lg:mb-0 lg:mr-[-5rem] lg:mt-24 lg:max-w-[375px]">
           {React.cloneElement(image, {
@@ -49,4 +46,4 @@ export default function Intro({
       </div>
     </Block>
   );
-}
+});
