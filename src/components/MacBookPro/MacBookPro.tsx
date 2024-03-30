@@ -9,10 +9,15 @@ export default forwardRef<
   Readonly<{
     children: React.ReactNode;
     className?: string;
+    id?: string;
   }>
->(function MacBookPro({ children, className }, ref) {
+>(function MacBookPro({ children, className, id }, ref) {
   return (
-    <div className={cx(styles['mbp-mockup-wrapper'], className)} ref={ref}>
+    <div
+      className={cx(styles['mbp-mockup-wrapper'], className)}
+      ref={ref}
+      id={id}
+    >
       <div className={styles['mbp-container']}>
         <div className={styles['mbp-display']}>
           <div className={styles['display-edge']}>

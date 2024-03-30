@@ -23,6 +23,9 @@ import TheUpcomingLogo from '@/assets/logos/the-upcoming.svg';
 
 import LightyearThumbnail from '@/assets/projects/lightyear/thumbnail.jpg';
 import LightyearIntro from '@/assets/projects/lightyear/intro.jpg';
+import LightyearProductionThumbnail from '@/assets/projects/lightyear/highlights/production.jpg';
+import LightyearEfficientDesignThumbnail from '@/assets/projects/lightyear/highlights/efficient-design.jpg';
+import LightyearCountdownThumbnail from '@/assets/projects/lightyear/highlights/countdown.jpg';
 
 import NtuThumbnail from '@/assets/projects/ntu/thumbnail.jpg';
 import NtuIntro from '@/assets/projects/ntu/intro.jpg';
@@ -213,11 +216,21 @@ export const PROJECTS = [
       },
       button: {
         label: 'Learn more',
-        href: '/lightyear/countdown.mp4',
-        icon: <Image src={PlayIcon} alt="" />,
+        href: '#screen-recording',
+        icon: <Image src={CircleArrowIcon} alt="" />,
       },
     },
     highlights: [
+      {
+        title: 'Countdown',
+        thumbnail: {
+          image: {
+            src: LightyearCountdownThumbnail,
+            alt: 'Lightyear Cars',
+          },
+          href: '/lightyear/countdown.mp4',
+        },
+      },
       {
         title: 'An electric shift - Solar electric vehicles explained',
         description: `Why it'll take more than conventional electric vehicles to scale clean mobility.`,
@@ -238,20 +251,22 @@ export const PROJECTS = [
       },
       {
         title: 'Unmatched economy - Efficient design explained',
-        description: `What makes Lightyear 0 the most efficient electric car in the world?.`,
-        button: {
-          label: 'Watch my script',
+        thumbnail: {
+          image: {
+            src: LightyearEfficientDesignThumbnail,
+            alt: 'Unmatched economy - Efficient design explained',
+          },
           href: '/lightyear/efficient-design-explained.mp4',
-          icon: <Image src={PlayIcon} alt="" />,
         },
       },
       {
         title: 'Lightyear 0 launch campaign - production has started',
-        description: `Announcing the production of the world's first solar car.`,
-        button: {
-          label: 'Watch my script',
+        thumbnail: {
+          image: {
+            src: LightyearProductionThumbnail,
+            alt: 'Lightyear 0 launch campaign - production has started',
+          },
           href: '/lightyear/production.mp4',
-          icon: <Image src={PlayIcon} alt="" />,
         },
       },
     ],

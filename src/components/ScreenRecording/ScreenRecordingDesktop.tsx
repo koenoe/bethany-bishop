@@ -14,7 +14,7 @@ export default function ScreenRecordingDesktop({
   const ref = useRef<HTMLDivElement>(null);
 
   return (
-    <MacBookPro ref={ref}>
+    <MacBookPro ref={ref} id="screen-recording">
       <ScreenRecordingBase
         inViewRef={ref}
         framePrefix={framePrefix}

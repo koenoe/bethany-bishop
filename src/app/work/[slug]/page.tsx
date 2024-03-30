@@ -78,12 +78,7 @@ export default function WorkPage({ params }: { params: Params }) {
           title={project.intro.title}
           description={project.intro.description}
           button={
-            <ButtonLink
-              intent="primary"
-              href={project.intro.button.href}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <ButtonLink intent="primary" href={project.intro.button.href}>
               {project.intro.button.icon}
               {project.intro.button.label}
             </ButtonLink>
