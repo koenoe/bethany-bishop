@@ -225,7 +225,7 @@ export const PROJECTS = [
     },
     highlights: [
       {
-        title: 'Lightyear launch teser - Countdown to a zero emission future',
+        title: 'Lightyear launch teaser - Countdown to a zero emission future',
         thumbnail: {
           image: {
             src: LightyearCountdownThumbnail,
@@ -244,7 +244,7 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'Solar charging explined - Discover solar electric vehicles (SEVs)',
+        title: 'Solar charging explained - Discover solar electric vehicles (SEVs)',
         thumbnail: {
           image: {
             src: LightyearSolarChargingThumbnail,
@@ -254,8 +254,8 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'Instinctive travellers — How mobility fits into human nature',
-        description: ``,
+        title: 'Instinctive travellers — Why mobility is in our DNA',
+        description: `Our cars are a societal necessity, but they began as primative instinct`,
         button: {
           label: 'Read my blog',
           href: 'https://lightyear.one/articles/clean-mobility-is-built-into-our-dna-how-our-cars-tap-into-human-instinct',
@@ -293,7 +293,7 @@ export const PROJECTS = [
       },
       {
         title: 'Earth Day 2022 — Driving beyond boundaries',
-        description: ``,
+        description: `Lightyear is made for curious minds, adventurers and explorers of the Earth.`,
         button: {
           label: 'Read my blog',
           href: 'https://lightyear.one/articles/earth-day-2022-driving-beyond-boundaries',
@@ -313,7 +313,7 @@ export const PROJECTS = [
 
       {
         title: 'Vehicles that power our homes — Potential beyond driving',
-        description: ``,
+        description: `Learn how EVs and SEVs hold potential to do far more than get us from A to B.`,
         button: {
           label: 'Read my blog',
           href: 'https://lightyear.one/articles/vehicles-that-power-our-homes-how-evs-and-sevs-can-rebalance-our-relationship-with-energy',
