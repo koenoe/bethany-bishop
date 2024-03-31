@@ -14,7 +14,7 @@ export default function ScreenRecordingMobile({
   const ref = useRef<HTMLDivElement>(null);
 
   return (
-    <IPhone14Pro className="mx-auto" ref={ref} id="screen-recording">
+    <IPhone14Pro className="mx-auto" ref={ref}>
       <ScreenRecordingBase
         inViewRef={ref}
         inViewTreshold={0.5}

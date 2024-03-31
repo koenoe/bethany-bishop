@@ -25,3 +25,19 @@ export const childVariants = {
     },
   },
 };
+
+const buttonTransition = {
+  duration: 0.3,
+  ease: 'easeInOut',
+};
+
+export const buttonVariants = {
+  hover: {
+    scale: 1.04,
+    transition: buttonTransition,
+  },
+  tap: {
+    scale: 0.96,
+    transition: buttonTransition,
+  },
+};

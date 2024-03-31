@@ -1,3 +1,5 @@
+'use client';
+
 import React, { forwardRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -5,12 +7,17 @@ import Link from 'next/link';
 import { PROJECTS } from '@/data';
 import PlayIcon from '@/assets/play.svg';
 
-import Card from './Card';
-import ButtonLink from './ButtonLink';
+import Button from './Button';
+import CardLink from './CardLink';
+import { motion } from 'framer-motion';
+import { buttonVariants } from '@/variants';
 
 export interface Props extends React.AllHTMLAttributes<HTMLDivElement> {
   highlight: (typeof PROJECTS)[number]['highlights'][number];
 }
+
+const MotionCardLink = motion(CardLink);
+const MotionLink = motion(Link);
 
 export default forwardRef<HTMLDivElement, Props>(function Highlight(
   { highlight },
@@ -18,33 +25,39 @@ export default forwardRef<HTMLDivElement, Props>(function Highlight(
 ) {
   if ('button' in highlight) {
     return (
-      <Card ref={ref} key={highlight.title}>
+      <MotionCardLink
+        key={highlight.title}
+        ref={ref as React.ForwardedRef<HTMLAnchorElement>}
+        href={highlight.button.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        variants={buttonVariants}
+        whileHover="hover"
+        whileTap="tap"
+      >
         <h3 className="text-heading-alt text-2xl md:text-3xl">
           {highlight.title}
         </h3>
         <p className="my-6 text-xl leading-relaxed">{highlight.description}</p>
-        <ButtonLink
-          className="w-full md:w-auto"
-          intent="primary"
-          href={highlight.button.href}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Button className="w-full md:w-auto" intent="primary">
           {highlight.button.icon}
           {highlight.button.label}
-        </ButtonLink>
-      </Card>
+        </Button>
+      </MotionCardLink>
     );
   }
 
   if ('thumbnail' in highlight) {
     return (
-      <Link
+      <MotionLink
         ref={ref as React.ForwardedRef<HTMLAnchorElement>}
         className="relative block"
         href={highlight.thumbnail.href}
         target="_blank"
         rel="noopener noreferrer"
+        variants={buttonVariants}
+        whileHover="hover"
+        whileTap="tap"
       >
         <Image
           src={highlight.thumbnail.image.src}
@@ -61,7 +74,7 @@ export default forwardRef<HTMLDivElement, Props>(function Highlight(
             {highlight.title}
           </h3>
         </div>
-      </Link>
+      </MotionLink>
     );
   }
 

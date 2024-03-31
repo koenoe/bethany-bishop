@@ -20,6 +20,7 @@ export default function ScreenRecording({ project }: Props) {
 
   return (
     <Block className="text-center">
+      <div id="screen-recording" />
       {isLg ? (
         <ScreenRecordingDesktop {...project.recordings.desktop} />
       ) : (

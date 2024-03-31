@@ -41,7 +41,7 @@ export default function Highlights({ project }: Props) {
   return (
     <Block>
       <motion.div
-        className="grid grid-cols-1 gap-4 lg:grid-cols-3"
+        className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-6"
         variants={containerVariants}
         viewport={{ once: true, amount: 0.25 }}
         initial="hidden"
@@ -50,7 +50,7 @@ export default function Highlights({ project }: Props) {
         {groups.map((group, index) => (
           <motion.div
             key={index}
-            className="grid gap-4"
+            className="grid gap-4 lg:gap-6"
             variants={childVariants}
           >
             {group.map((highlight) => (

@@ -16,7 +16,7 @@ export default function About() {
   return (
     <MotionIntro
       variants={containerVariants}
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.1 }}
       initial="hidden"
       whileInView="visible"
       image={
