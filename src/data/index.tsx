@@ -104,7 +104,8 @@ export const HOME_PAGE = {
   },
   services: {
     title: 'Your story sets you apart',
-    description: `Telling it with impact, clarity and emotion is what makes a brand stand up and stand out. That's where I can help.`,
+    description: `Telling it with impact, clarity and emotion is what makes a brand stand up and stand out. 
+    That's where I can help.`,
     items: [
       {
         title: 'Copywriting',
@@ -126,7 +127,7 @@ export const HOME_PAGE = {
       },
       {
         title: 'Branding and tone',
-        description: `People don't identify with companies. They identify with brands that speak to who they are, and listen too. Whether you want to finesse your unique tone of voice or set up the strategies that will breathe life and character into your offering, I've got you.`,
+        description: `People don't identify with companies. They identify with brands that speak to who they are, and listen too. Whether you want to finesse your unique tone of voice, inject personality into your products, or set up strategies that will breathe life and character into your offering, I've got you.`,
         icon: MagicWandIcon,
       },
     ],
@@ -170,7 +171,7 @@ export const HOME_PAGE = {
   ],
   contact: {
     title: 'Drop me a line any time.',
-    description: `Whether you have a question, a project idea, or just want to say hello, I'd love to hear from you. Reach out and let's start a conversation.`,
+    description: `Whether you have a question, a project idea, or just want to say hello, I'd love to hear from you. Reach out, let's have a chat`,
   },
 } as const;
 
@@ -201,7 +202,7 @@ export const PROJECTS = [
           </p>
           <p>
             The time has come to engineer a new reality. Like our ancestors,
-            we'll break ground to discover pioneering possibility. We'll follow
+            we'll break ground. We'll follow
             our instincts, letting curiosity forge paths to a more balanced
             world.
           </p>
@@ -209,7 +210,7 @@ export const PROJECTS = [
             There will be no looking back at the way things should have been,
             only ahead to what could be: clean movement, accessible to all.
           </p>
-          <p>Solar electric cars that flip the script for a cleaner future.</p>
+          <p>To solar electric cars that flip the script for a cleaner future.</p>
         </>
       ),
       image: {
@@ -224,7 +225,7 @@ export const PROJECTS = [
     },
     highlights: [
       {
-        title: 'Countdown',
+        title: 'Lightyear launch teser - Countdown to a zero emission future',
         thumbnail: {
           image: {
             src: LightyearCountdownThumbnail,
@@ -235,7 +236,7 @@ export const PROJECTS = [
       },
       {
         title: 'Product launch - Lightyear 0 deep dive',
-        description: `Discover the specs that reinvent the wheel.`,
+        description: `Discover specs that reinvent the wheel.`,
         button: {
           label: 'Read my blog',
           href: 'https://lightyear.one/articles/a-deep-dive-into-lightyear-0-how-far-can-clean-solar-kilometres-take-us',
@@ -243,17 +244,17 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'Solar electric vehicles (SEVs) - solar charging explained',
+        title: 'Solar charging explined - Discover solar electric vehicles (SEVs),
         thumbnail: {
           image: {
             src: LightyearSolarChargingThumbnail,
-            alt: 'Solar electric vehicles (SEVs) - solar charging explained',
+            alt: 'Solar charging explined - Discover solar electric vehicles (SEVs)',
           },
           href: '/lightyear/solar-charging.mp4',
         },
       },
       {
-        title: 'Educational — How mobility fits into human nature',
+        title: 'Instinctive travellers — How mobility fits into human nature',
         description: ``,
         button: {
           label: 'Read my blog',
@@ -262,11 +263,11 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'Sustainability',
+        title: 'Sustainabile driving explained - Planet-concious design',
         thumbnail: {
           image: {
             src: LightyearSustainabilityThumbnail,
-            alt: 'Sustainability',
+            alt: 'Sustainabile driving explained - Planet-concious design',
           },
           href: '/lightyear/sustainability.mp4',
         },
@@ -281,17 +282,17 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'Unmatched economy - Efficient design explained',
+        title: 'Efficiency explained - Built for unmatched economy',
         thumbnail: {
           image: {
             src: LightyearEfficientDesignThumbnail,
-            alt: 'Unmatched economy - Efficient design explained',
+            alt: 'Efficiency explained - Built for unmatched economy',
           },
           href: '/lightyear/efficient-design-explained.mp4',
         },
       },
       {
-        title: 'Aspirational — Driving beyond boundaries for Earth Day 2022',
+        title: 'Earth Day 2022 — Driving beyond boundaries',
         description: ``,
         button: {
           label: 'Read my blog',
@@ -300,18 +301,18 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'Lightyear 0 launch campaign - production has started',
+        title: 'Lightyear 0 production campaign - Production has started',
         thumbnail: {
           image: {
             src: LightyearProductionThumbnail,
-            alt: 'Lightyear 0 launch campaign - production has started',
+            alt: 'Lightyear 0 production campaign - Production has started',
           },
           href: '/lightyear/production.mp4',
         },
       },
 
       {
-        title: 'Educational — Solar car potential, beyond driving',
+        title: 'Vehicles that power our homes — Potential beyond driving',
         description: ``,
         button: {
           label: 'Read my blog',
