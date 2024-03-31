@@ -312,7 +312,7 @@ export const PROJECTS = [
 
       {
         title: 'Vehicles that power our homes — Potential beyond driving',
-        description: `Learn how EVs and SEVs hold potential to do far more than get us from A to B.`,
+        description: `Learn how EVs and SEVs could do far more than get us from A to B.`,
         button: {
           label: 'Read my blog',
           href: 'https://lightyear.one/articles/vehicles-that-power-our-homes-how-evs-and-sevs-can-rebalance-our-relationship-with-energy',
