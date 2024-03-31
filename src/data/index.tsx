@@ -105,7 +105,7 @@ export const HOME_PAGE = {
   services: {
     title: 'Your story sets you apart',
     description: `Telling it with impact, clarity and emotion is what makes a brand stand up and stand out. 
-    That's where I can help.`,
+    </p> That's where I can help.`,
     items: [
       {
         title: 'Copywriting',
@@ -244,7 +244,7 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'Solar charging explined - Discover solar electric vehicles (SEVs),
+        title: 'Solar charging explined - Discover solar electric vehicles (SEVs)',
         thumbnail: {
           image: {
             src: LightyearSolarChargingThumbnail,
