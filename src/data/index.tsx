@@ -108,7 +108,7 @@ export const HOME_PAGE = {
     items: [
       {
         title: 'Copywriting',
-        description: `I can write your website, give your email campaigns a kick or create some stellar micro-copy for your apps and interfaces. I do a mean brochure, too. Whatever your written need, digital or print, I promise authentic writing that people want to read. That's harder than it sounds.`,
+        description: `I can write your website, give your email campaigns a kick or create some stellar micro-copy for your apps and interfaces. I do a mean brochure, too. Whatever your written need, digital or print, I promise authentic writing that people actually want to read. That's harder than it sounds.`,
         icon: PencilIcon,
       },
       {
@@ -200,16 +200,15 @@ export const PROJECTS = [
             enduring. Climate change is advancing.
           </p>
           <p>
-            The time has come to engineer a new reality. Like our ancestors,
-            we'll break ground. We'll follow
-            our instincts, letting curiosity forge paths to a more balanced
+            At Lightyear, we believe the time has come to engineer a new reality. Like our ancestors,
+            we'll break ground. We'll let curiosity lead as we forge paths to a more balanced
             world.
           </p>
           <p>
             There will be no looking back at the way things should have been,
-            only ahead to what could be: clean movement, accessible to all.
+            only ahead to what could be.
           </p>
-          <p>To solar electric cars that flip the script for a cleaner future.</p>
+          <p>Solar electric cars that flip the script for a cleaner future.</p>
         </>
       ),
       image: {
