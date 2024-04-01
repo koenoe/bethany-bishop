@@ -253,7 +253,7 @@ export const PROJECTS = [
       },
       {
         title: 'Instinctive travellers — Why mobility is in our DNA',
-        description: `Our cars are a societal necessity, but they began as primative instinct`,
+        description: `Our cars are a societal necessity, but they began as primative instinct.`,
         button: {
           label: 'Read my blog',
           href: 'https://lightyear.one/articles/clean-mobility-is-built-into-our-dna-how-our-cars-tap-into-human-instinct',
