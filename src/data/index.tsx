@@ -71,7 +71,7 @@ export const HOME_PAGE = {
     description: (
       <>
         <p>
-          To most, what I do looks a lot like tapping away at a desk. Possibly
+          What I do looks a lot like tapping away at a desk. Possibly
           with a cat on my lap, definitely with a cuppa close to hand.
         </p>
         <p>But let me tell you, it's much more than that.</p>
