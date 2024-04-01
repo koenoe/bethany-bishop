@@ -41,3 +41,10 @@ export const buttonVariants = {
     transition: buttonTransition,
   },
 };
+
+export const imageVariants = {
+  hover: {
+    scale: 1.05,
+    transition: buttonTransition,
+  },
+};

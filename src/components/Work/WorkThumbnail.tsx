@@ -8,22 +8,13 @@ import { motion } from 'framer-motion';
 
 import Button from '../Button';
 import CircleArrowIcon from '@/assets/circle-arrow.svg';
+import { imageVariants } from '@/variants';
 
 type Props = (typeof PROJECTS)[number] &
   React.AllHTMLAttributes<HTMLDivElement>;
 
 const MotionLink = motion(Link);
 const MotionImage = motion(Image);
-
-const variants = {
-  hover: {
-    scale: 1.05,
-    transition: {
-      duration: 0.3,
-      ease: 'easeInOut',
-    },
-  },
-};
 
 export default function WorkThumbnail({ className, thumbnail, slug }: Props) {
   return (
@@ -37,7 +28,7 @@ export default function WorkThumbnail({ className, thumbnail, slug }: Props) {
         alt={thumbnail.image.alt}
         className="absolute inset-0 h-full w-full transform-gpu object-cover object-top"
         placeholder="blur"
-        variants={variants}
+        variants={imageVariants}
       />
       <div className="absolute inset-0 bg-black opacity-35" />
       <div className="absolute bottom-8 left-8 text-white md:bottom-20 md:left-20">
