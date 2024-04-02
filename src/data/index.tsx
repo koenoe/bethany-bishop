@@ -175,7 +175,7 @@ export const HOME_PAGE = {
     },
   ],
   contact: {
-    title: 'Drop me a line any time.',
+    title: 'Drop me a line any time',
     description: (
       <>
         Whether you have a question, a project idea, or just want to say hello,
