@@ -71,8 +71,8 @@ export const HOME_PAGE = {
     description: (
       <>
         <p>
-          What I do looks a lot like tapping away at a desk. Possibly
-          with a cat on my lap, definitely with a cuppa close to hand.
+          What I do looks a lot like tapping away at a desk. Possibly with a cat
+          on my lap, definitely with a cuppa close to hand.
         </p>
         <p>But let me tell you, it's much more than that.</p>
         <p>
@@ -103,7 +103,14 @@ export const HOME_PAGE = {
   },
   services: {
     title: 'Your story sets you apart',
-    description: `Telling it with impact, clarity and emotion is what makes a brand stand up and stand out. <br /> That's where I can help.`,
+    description: (
+      <>
+        Telling it with impact, clarity and emotion is what makes a brand stand
+        up and stand out.
+        <br />
+        That's where I can help.
+      </>
+    ),
     items: [
       {
         title: 'Copywriting',
@@ -169,7 +176,14 @@ export const HOME_PAGE = {
   ],
   contact: {
     title: 'Drop me a line any time.',
-    description: `Whether you have a question, a project idea, or just want to say hello, I'd love to hear from you. Reach out, let's have a chat`,
+    description: (
+      <>
+        Whether you have a question, a project idea, or just want to say hello,
+        I'd love to hear from you.
+        <br />
+        Reach out, let's have a chat
+      </>
+    ),
   },
 } as const;
 
@@ -199,9 +213,9 @@ export const PROJECTS = [
             enduring. Climate change is advancing.
           </p>
           <p>
-            At Lightyear, we believe the time has come to engineer a new reality. Like our ancestors,
-            we'll break ground. We'll let curiosity lead as we forge paths to a more balanced
-            world.
+            At Lightyear, we believe the time has come to engineer a new
+            reality. Like our ancestors, we'll break ground. We'll let curiosity
+            lead as we forge paths to a more balanced world.
           </p>
           <p>
             There will be no looking back at the way things should have been,
@@ -241,7 +255,8 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'Solar charging explained - Discover solar electric vehicles (SEVs)',
+        title:
+          'Solar charging explained - Discover solar electric vehicles (SEVs)',
         thumbnail: {
           image: {
             src: LightyearSolarChargingThumbnail,
