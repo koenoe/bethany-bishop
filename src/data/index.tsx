@@ -275,7 +275,7 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'Sustainabile driving explained - Planet-concious design',
+        title: 'Sustainable driving explained - Designed for the planet',
         thumbnail: {
           image: {
             src: LightyearSustainabilityThumbnail,
@@ -286,7 +286,7 @@ export const PROJECTS = [
       },
       {
         title: 'An electric shift - Solar electric vehicles explained',
-        description: `Why it'll take more than conventional electric vehicles to scale clean mobility.`,
+        description: `Why it'll take more than conventional EVs to scale clean mobility.`,
         button: {
           label: 'Read my blog',
           href: 'https://lightyear.one/articles/a-powerful-shift-why-it-ll-take-more-than-conventional-electric-vehicles-to-scale-clean-mobility',
