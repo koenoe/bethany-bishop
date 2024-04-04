@@ -132,7 +132,7 @@ export const HOME_PAGE = {
       },
       {
         title: 'Branding and tone',
-        description: `People don't identify with companies. They identify with brands that speak to who they are, and listen too. Whether you want to finesse your unique tone of voice, inject personality into your products, or set up strategies that will breathe life and character into your offering, I've got you.`,
+        description: `People don't identify with companies. They identify with brands that speak to who they are, and listen too. Whether you want to finesse your unique tone of voice, inject personality into your products, or set up strategies that breathe life and character into your offering, I've got you.`,
         icon: MagicWandIcon,
       },
     ],
