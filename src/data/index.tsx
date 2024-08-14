@@ -247,7 +247,7 @@ export const PROJECTS = [
       },
       {
         title: 'Solar panels on any car — the versatility of Lightyear’s technology',
-        description: `Learn how Lightyear's technology can gift any EV witj limitless power.`,
+        description: `Learn how Lightyear's technology can gift any EV with limitless power.`,
         button: {
           label: 'Read my blog',
           href: 'https://lightyear.one/articles/solar-panels-on-any-car-the-versatility-of-lightyear-s-solar-technology',
@@ -266,11 +266,11 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'Instinctive travellers — Why mobility is in our DNA',
-        description: `Our cars are a societal necessity, but they began as primative instinct.`,
+        title: 'Good for the planet, good for you',
+        description: `Head to the homepage for a glimpse at innovation soaked in sunshine.`,
         button: {
-          label: 'Read my blog',
-          href: 'https://lightyear.one/articles/clean-mobility-is-built-into-our-dna-how-our-cars-tap-into-human-instinct',
+          label: 'Read my webpage',
+          href: 'https://lightyear.one/',
           icon: <Image src={ExternalLinkIcon} alt="" />,
         },
       },
@@ -328,7 +328,7 @@ export const PROJECTS = [
         description: `Discover the origins of solar energy as we unpick how the sun gifts power to the earth.`,
         button: {
           label: 'Read my blog',
-          href: 'https://lightyear.one/articles/vehicles-that-power-our-homes-how-evs-and-sevs-can-rebalance-our-relationship-with-energy',
+          href: 'https://lightyear.one/articles/ten-things-you-may-not-know-about-solar-technology',
           icon: <Image src={ExternalLinkIcon} alt="" />,
         },
       },
