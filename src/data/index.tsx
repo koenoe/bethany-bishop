@@ -246,7 +246,7 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'Solar panels on any car — the versatility of Lightyear’s solar technology',
+        title: 'Solar panels on any car — the versatility of Lightyear’s technology',
         description: `Learn how Lightyear's technology can gift any EV witj limitless power.`,
         button: {
           label: 'Read my blog',
