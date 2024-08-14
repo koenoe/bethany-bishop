@@ -246,11 +246,11 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'Product launch - Lightyear 0 deep dive',
-        description: `Discover specs that reinvent the wheel.`,
+        title: 'Solar panels on any car — the versatility of Lightyear’s solar technology',
+        description: `Learn how Lightyear's technology can gift any EV witj limitless power.`,
         button: {
           label: 'Read my blog',
-          href: 'https://lightyear.one/articles/a-deep-dive-into-lightyear-0-how-far-can-clean-solar-kilometres-take-us',
+          href: 'https://lightyear.one/articles/solar-panels-on-any-car-the-versatility-of-lightyear-s-solar-technology',
           icon: <Image src={ExternalLinkIcon} alt="" />,
         },
       },
@@ -285,10 +285,10 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'An electric shift - Solar electric vehicles explained',
-        description: `Why it'll take more than conventional EVs to scale clean mobility.`,
+        title: 'Clean mobility for everyone, everywhere',
+        description: `The mission to reverse a lightyear driven on fossil fuels.`,
         button: {
-          label: 'Read my blog',
+          label: 'Read my webpage',
           href: 'https://lightyear.one/articles/a-powerful-shift-why-it-ll-take-more-than-conventional-electric-vehicles-to-scale-clean-mobility',
           icon: <Image src={ExternalLinkIcon} alt="" />,
         },
@@ -304,11 +304,11 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'Earth Day 2022 — Driving beyond boundaries',
-        description: `Lightyear is made for curious minds, adventurers and explorers of the Earth.`,
+        title: 'An automotive switch — Solar electric driving explained',
+        description: `Imagine range that expanded with every ray.`,
         button: {
           label: 'Read my blog',
-          href: 'https://lightyear.one/articles/earth-day-2022-driving-beyond-boundaries',
+          href: 'https://lightyear.one/articles/an-automotive-switch-solar-technology-will-become-the-norm-for-limitless-electric-driving',
           icon: <Image src={ExternalLinkIcon} alt="" />,
         },
       },
@@ -324,8 +324,8 @@ export const PROJECTS = [
       },
 
       {
-        title: 'Vehicles that power our homes — Potential beyond driving',
-        description: `Learn how EVs and SEVs could do far more than get us from A to B.`,
+        title: '10 things you may not know about solar technology',
+        description: `Discover the origins of solar energy as we unpick how the sun gifts power to the earth.`,
         button: {
           label: 'Read my blog',
           href: 'https://lightyear.one/articles/vehicles-that-power-our-homes-how-evs-and-sevs-can-rebalance-our-relationship-with-energy',
