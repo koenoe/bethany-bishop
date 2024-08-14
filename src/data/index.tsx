@@ -246,7 +246,8 @@ export const PROJECTS = [
         },
       },
       {
-        title: 'Solar panels on any car — the versatility of Lightyear’s technology',
+        title:
+          'Solar panels on any car — the versatility of Lightyear’s technology',
         description: `Learn how Lightyear's technology can gift any EV with limitless power.`,
         button: {
           label: 'Read my blog',
@@ -289,7 +290,7 @@ export const PROJECTS = [
         description: `The mission to reverse a lightyear driven on fossil fuels.`,
         button: {
           label: 'Read my webpage',
-          href: 'https://lightyear.one/impact,
+          href: 'https://lightyear.one/impact',
           icon: <Image src={ExternalLinkIcon} alt="" />,
         },
       },
